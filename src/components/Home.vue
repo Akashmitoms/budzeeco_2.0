@@ -9,11 +9,11 @@
     </div> -->
     <div id="smooth-wrapper" class="mil-wrapper">
       <div class="mil-progress-track"><div class="mil-progress"></div></div>
-      <a href="#" class="progress-wrap active-progress"></a>
-      <div class="mil-top-panel">
+      <a href="#" class="progress-wrap" :class="{ 'active-progress': isScrolled }"></a>
+      <div :class="['mil-top-panel', { 'mil-active': isScrolled }]">
         <div class="container">
           <a class="mil-logo" href="index.html"
-            ><img src="/img/logo_3.png" alt="Plax" width="140px" 
+            ><img src="\img\logo budzeeco_1.jpg" alt="Plax" width="140px" 
           /></a>
           <nav class="mil-top-menu">
             <ul>
@@ -36,7 +36,7 @@
                   <li><a href="publication.html">Blog details</a></li>
                 </ul>
               </li>
-              <li class=""><a href="contact.html">Contact</a></li>
+              <li class=""><a href="/contact">Contact</a></li>
               <li class="mil-has-children">
                 <a href="#.">Pages</a>
                 <ul>
@@ -573,7 +573,7 @@
             <div class="row">
               <div class="col-xl-3">
                 <a href="#." class="mil-footer-logo mil-mb-60"
-                  ><img src="/img/logo_3.png" alt="Plax" width="105px"
+                  ><img src="\img\logo buzeeco.jpg" alt="Plax" width="105px"
                 /></a>
               </div>
               <div class="col-xl-3 mil-mb-60">
@@ -677,10 +677,32 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      isScrolled: false, // Track scroll state
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      // Check scroll position
+      this.isScrolled = window.scrollY > 50; // Threshold for scroll effect
+    },
+  },
+};
+</script>
+
 <style scoped>
-.mil-top-panel
+/* .mil-top-panel
 {
   background: #F2FAFA;
-}
+} */
 
 </style>
