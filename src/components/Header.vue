@@ -1,17 +1,17 @@
 <template>
-     <a href="#" class="progress-wrap active-progress"></a>
+     
       <div class="mil-top-panel mil-dark-2">
         <div class="container">
-          <a class="mil-logo" href="index.html"
+          <RouterLink to="/" class="mil-logo"
             ><img src="\img\logo budzeeco_1.jpg" alt="Plax" width="90" 
-          /></a>
+          /></RouterLink>
           <nav class="mil-top-menu">
             <ul>
               <li class="mil-has-children mil-active">
                 <a href="#.">MASTERCLASS​</a>
               </li>
-              <li class=""><a href="about.html">CALCULATORS​</a></li>
-              <li class=""><a href="services.html">MY MENTOR</a></li>
+              <li class=""><RouterLink to="/calculator">CALCULATORS​</RouterLink></li>
+              <li class=""><RouterLink to="#">MY MENTOR</RouterLink></li>
               
             </ul>
           </nav>

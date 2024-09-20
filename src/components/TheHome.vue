@@ -19,11 +19,6 @@
                     <a class="mil-btn mil-md mil-add-arrow" href="register.html"
                       >JOIN  COMMUNITY​</a
                     >
-                    <!-- <a
-                      href="https://www.youtube.com/watch?v=gRhoYxy9Oss"
-                      class="mil-btn mil-md mil-transp mil-add-play has-popup-video"
-                      >Watch tutorial</a
-                    > -->
                   </div>
                 </div>
               </div>
@@ -199,7 +194,7 @@
                 </div>
                 <div class="col-xl-5">
                   <div class="mil-image-frame mil-visible-overflow">
-                    <img src="../../public/img/budzee/m1.jpg  " alt="image" class="mil-up" />
+                    <img src="/img/budzee/m1.jpg  " alt="image" class="mil-up" />
                     
                   </div>
                 </div>

@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../components/Home.vue'
-import MyMentor from '../components/MyMentor.vue'
+import Calculator from '../components/Calculator.vue'
 import TheHome from '../components/TheHome.vue'
+import FdCalculator from '../components/Calculations/FdCalculator.vue'
 
 
 const router = createRouter({
@@ -13,9 +14,14 @@ const router = createRouter({
       component: TheHome,
     },
     {
-      path: '/myMentor',
-      name: 'MyMentor',
-      component: MyMentor,
+      path: '/calculator',
+      name: 'Calculator',
+      component: Calculator,
+    },
+    {
+      path: '/fdCalculator',
+      name: 'FdCalculator',
+      component: FdCalculator,
     },
   ]
 })
