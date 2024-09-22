@@ -443,7 +443,5 @@ export default {
 canvas {
   max-width: 100%;
 }
-.page_sec {
-  padding-top: 7%;
-}
+
 </style>

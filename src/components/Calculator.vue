@@ -24,7 +24,7 @@
               </div>
               <div class="col-xl-4 mil-mb-30">
                 <div
-                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up"
+                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/nps-calculation')"
                 >
                 <span class="icon1"><font-awesome-icon :icon="['fas', 'money-bill-trend-up']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">National Pension Scheme</h5>
@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/rd-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'coins']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     Recurring Deposit
@@ -50,7 +50,7 @@
 
             <div class="row align-items-center">
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/cagr-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'chart-line']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     Compound annual growth rate
@@ -64,7 +64,7 @@
               </div>
               <div class="col-xl-4 mil-mb-30">
                 <div
-                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up"
+                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/nsc-calculation')"
                 >
                 <span class="icon1"><font-awesome-icon :icon="['fas', 'file-invoice-dollar']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">National Savings Certificate</h5>
@@ -75,7 +75,7 @@
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/hra-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'house-circle-check']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     House Rent Allowance
@@ -90,7 +90,7 @@
 
             <div class="row align-items-center">
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/mf-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'sack-dollar']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     Mutual Fund
@@ -104,7 +104,7 @@
               </div>
               <div class="col-xl-4 mil-mb-30">
                 <div
-                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up"
+                  class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/ssy-calculation')"
                 >
                 <span class="icon1"><font-awesome-icon :icon="['fas', 'file-signature']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">Sukanya Samriddhi Yojana</h5>
@@ -115,7 +115,7 @@
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-bg-fix mil-center mil-up">
+                <div class="mil-icon-box mil-bg-fix mil-center mil-up" @click="$router.push('/sip-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'circle-dollar-to-slot']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     Systematic Investment Plan
@@ -130,7 +130,7 @@
 
             <div class="row align-items-center">
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/goal-sip-calculation')">
                   <span class="icon1"><font-awesome-icon :icon="['fas', 'bullseye']" /></span>
                   <h5 class="mil-mb-20 mil-light mil-up">
                     Goal SIP
@@ -143,7 +143,7 @@
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-bg-fix mil-center mil-up"
+                <div class="mil-icon-box mil-bg-fix mil-center mil-up" @click="$router.push('/fire-calculation')"
                   
                 >
                 <span class="icon1"><font-awesome-icon :icon="['fas', 'money-bills']" /></span>
