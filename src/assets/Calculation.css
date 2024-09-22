@@ -1,0 +1,315 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section7{
+  padding: 1% 10%;
+}
+.section8{
+  background-color: #f5f2f0;
+  padding: 0 5px;
+}
+.sub_head_line_b{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: dm-sans;
+    text-align: left;
+    color: #123931;
+    margin: 10px 0;
+  }
+.cla1{
+  display: flex;
+  gap: 2%;
+}
+.cla1_a{
+  width: 50%;
+  padding: 10px 0;
+  /* border: 1px dashed red; */
+}
+.cla1 h2{
+  font-size: 30px;
+    font-weight: 500;
+    font-family: dm-sans;
+    text-align: left;
+    color: #123931;
+    margin: 10px 0;
+}
+.cla1_b{
+  width: 50%;
+  padding: 10 0px;
+  /* border: 1px dashed red; */
+}
+.Effective_returns{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border: 2px solid lightgray;
+}
+.Effective_returns p {
+  font-size: 25px;
+  color: #123931;
+  text-align: center;
+  margin: 10px 0;
+}
+.v_line {
+  border-left: 2px solid lightgray;
+  height: 60px;
+  margin: 2% 0;
+}
+.input_field {
+  margin: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.input_field1{
+  margin: 1% 0;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.input_field1 label {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #123931;
+  opacity: 0.7;
+  padding: 5px 0 0 5px;
+}
+.input_field_sub{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input_field label {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #123931;
+  opacity: 0.7;
+  padding: 5px 0 0 5px;
+}
+.input_field input[type="tel"] {
+  width: 33%;
+  text-align: right;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #BDFFFE;
+  background-image: url("../../public/img/svg/percentage.svg");
+  background-position: 98% 12px;
+  background-repeat: no-repeat;
+  padding: 9px 25px 12px 10px;
+}
+.input_field select {
+  width: 33%;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #BDFFFE;
+}
+.contant p{
+  font-size: 20px;
+  color: #123931;
+  text-align: justify;
+  font-family: dm-sans;
+}
+.graph{
+  width: 100%;
+  height: 380px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+.popular_calculators{
+  border: 1px solid lightgray;
+  color: #53CD63;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 10px 0;
+}
+#input_logo {
+    width: 33%;
+    border: none;
+    font-size: 1rem;
+    text-align: end;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #BDFFFE;
+    background-image: url("../../public/img/svg/rupee.svg");
+    background-position: 5px 12px;
+    background-repeat: no-repeat;
+    padding: 9px 10px 12px 10px;
+  }
+#common_input {
+    width: 33%;
+    text-align: end;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #BDFFFE;
+    background-position: 90% 12px;
+    background-repeat: no-repeat;
+    padding: 9px 10px 12px 10px;
+  }
+  #disabled {
+    width: 33%;
+    text-align: end;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: lightgray;
+    background-position: 90% 12px;
+    background-repeat: no-repeat;
+    padding: 9px 40px 12px 40px;
+  }
+.popular_calculators span{
+  font-size: 23px;
+  color: #123931;
+  padding: 0 20px;
+}
+.popular_calculators:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.faq_q {
+  padding: 10px;
+  background-color: #f5f2f0;
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.faq_q:hover {
+  background-color: #eaeaea;
+}
+
+.faq_q h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: dm-sans;
+  line-height: 28px;
+  margin: 0;
+}
+
+.faq_q .fa-icon {
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+.faq_an {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #f5f2f0;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: max-height 0.5s ease;
+}
+/* Fade Transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+.hr{
+    border: 1px solid lightgray;
+    margin: 2% 0;
+}
+.value{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  color: #0BB5FF;
+  
+}
+@media only screen and (max-width: 400px) {
+  .head_line_b{
+    font-size: 30px;
+  }
+  .sub_head_line_b{
+    font-size: 25px;
+  }
+  .Effective_returns p{
+    font-size: 15px;
+  }
+  .value{
+    font-size: 15px;
+  }
+  .section4{
+    padding: 5% 2%;
+  }
+  .cla1 h2{
+    font-size: 25px;
+  }
+  .input_field label{
+    font-size: 15px;
+  }
+  .input_field1 label{
+    font-size: 15px;
+  }
+  #input_logo, .input_field input[type="tel"], .input_field select, #common_input{
+    font-size: 14px;
+    width: 40%;
+  }
+  .popular_calculators span{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .head_line_b{
+    font-size: 30px;
+  }
+  .sub_head_line_b{
+    font-size: 25px;
+  }
+  .Effective_returns p{
+    font-size: 15px;
+  }
+  .value{
+    font-size: 18px;
+  }
+  .section4{
+    padding: 5% 2%;
+  }
+  .cla1 h2{
+    font-size: 25px;
+  }
+  .input_field label{
+    font-size: 18px;
+  }
+  .input_field1 label{
+    font-size: 18px;
+  }
+  #input_logo, .input_field input[type="tel"], .input_field select, #common_input{
+    font-size: 14px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .cla1{
+    display: flex;
+    flex-direction: column;
+  }
+  .cla1_a{
+    width: 100%;
+  }
+  .cla1_b{
+    width: 100%;
+  }
+}
