@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../components/Home.vue'
 import Calculator from '../components/Calculator.vue'
 import TheHome from '../components/TheHome.vue'
+import MyMentor from '../components/MyMentor.vue'
 import FdCalculator from '../components/Calculations/FdCalculator.vue'
 import CagrCalculation from '../components/Calculations/CagrCalculation.vue'
 import FireCalculation from '../components/Calculations/FireCalculation.vue'
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/',
       name: 'TheHome',
       component: TheHome,
+    },
+    {
+      path: '/myMentor',
+      name: 'MyMentor',
+      component: MyMentor,
     },
     {
       path: '/calculator',

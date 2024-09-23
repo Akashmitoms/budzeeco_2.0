@@ -43,7 +43,7 @@
         <br />
         <h2>Popular Calculators</h2>
 
-        <div class="popular_calculators" @click="$router.push('/fd-calculation')">
+        <div class="popular_calculators" @click="$router.push('/fdCalculator')">
           <span>FD Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
         </div>

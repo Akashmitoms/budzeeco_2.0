@@ -11,7 +11,7 @@
                 <a href="#.">MASTERCLASS​</a>
               </li>
               <li class=""><RouterLink to="/calculator">CALCULATORS​</RouterLink></li>
-              <li class=""><RouterLink to="#">MY MENTOR</RouterLink></li>
+              <li class=""><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
               
             </ul>
           </nav>
@@ -27,3 +27,9 @@
         </div>
       </div>
 </template>
+
+<style scoped>
+@import '../assets/style1.css';
+@import '../assets/style2.css';
+@import '../assets/style2.css';
+</style>

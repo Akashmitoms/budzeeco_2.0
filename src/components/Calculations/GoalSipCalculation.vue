@@ -64,7 +64,7 @@
           <span>SIP Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
         </div>
-        <div class="popular_calculators" @click="$router.push('/fd-calculation')">
+        <div class="popular_calculators" @click="$router.push('/fdCalculator')">
           <span>FD Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
         </div>
