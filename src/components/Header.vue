@@ -31,5 +31,6 @@
 <style scoped>
 @import '../assets/style1.css';
 @import '../assets/style2.css';
-@import '../assets/style2.css';
+@import '../assets/style3.css';
+
 </style>

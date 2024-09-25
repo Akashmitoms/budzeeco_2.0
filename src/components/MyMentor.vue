@@ -7,7 +7,7 @@
           <button class="input_btn1" @click="$router.push('/book-call')">Book A Call</button>
         </div>
         <div class="sec_a2">
-          <img src="../../public/img/budzee/desk.png" alt="">
+          <img src="/img/budzee/desk.png" alt="">
         </div>
       </div>
     </section>
@@ -16,23 +16,23 @@
       <div class="sec_b">
         <div class="sec_b1">
           <h2>Will I ever be able to save enough money for my retirement?</h2>
-          <img src="../assets/image/sld1.png" alt="">
+          <img src="/img/budzee/sld1.png" alt="">
         </div>
         <div class="sec_b1">
           <h2>Do my insurance policies cover enough?</h2>
-          <img src="../assets/image/sld2.png" alt="">
+          <img src="/img/budzee/sld2.png" alt="">
         </div>
         <div class="sec_b1">
           <h2>I wish I could budget for more vacations</h2>
-          <img src="../assets/image/sid6.png" alt="">
+          <img src="/img/budzee/sid6.png" alt="">
         </div>
         <div class="sec_b1">
           <h2>Am I blindly paying excessive taxes?</h2>
-          <img src="../assets/image/sid10.png" alt="">
+          <img src="/img/budzee/sid10.png" alt="">
         </div>
         <div class="sec_b1">
           <h2>But where is the time to plan my finances?</h2>
-          <img src="../assets/image/sid8.png" alt="">
+          <img src="/img/budzee/sid8.png" alt="">
         </div>
       </div>
       <div style="width: 100%;"><button class="btn_pc" @click="$router.push('/book-call')">Book A Call</button></div>
@@ -71,26 +71,29 @@
   </section>
   
     <section class="section2">
-      <h1 class="head_line">What's our expertise and what we do -</h1>
+      <h1 class="head_line">What's our expertise and what we do -</h1> <br>
       <div class="sec_d">
         <div class="sec_d1">
-          <div><img src="../assets/image/an (3).webp" alt=""></div>
+          <div><img src="/img/budzee/gl1 (1).png" alt=""></div>
+          <div>
           <h2>Introductory Consultation</h2>
           <p>A 30-minute call with your Personal Consultant to
             gain insights into our services and for us to understand your
-            finances better and to engage in addressing any queries you may have</p>
+            finances better and to engage in addressing any queries you may have</p></div>
         </div>
         <div class="sec_d1">
-          <div><img src="../assets/image/an (1).webp" alt=""></div>
+          <div><img src="/img/budzee/gl1 (2).png" alt=""></div>
+          <div>
           <h2>Financial Plan Preparation</h2>
           <p>Let’s get talking and understand your Cash flow, Goals, Investments,
-            Risk coverage and Tax planning. This will be the base of all our future discussions.</p>
+            Risk coverage and Tax planning. This will be the base of all our future discussions.</p></div>
         </div>
         <div class="sec_d1">
-          <div><img src="../assets/image/an (2).webp" alt=""></div>
+          <div><img src="/img/budzee/gl1 (3).png" alt=""></div>
+          <div>
           <h2>Financial Plan Discussion & Execution</h2>
           <p>Tailor-made solutions will be provided by your Personal Consultant. Corrective steps in current Investments,
-            future investments and mapping of assets.</p>
+            future investments and mapping of assets.</p></div>
         </div>
       </div>
     </section>
@@ -113,13 +116,13 @@
         slidesToShow : 3,
         currentIndex: 0,
         items: [
-        { img: '../assets/image/sid6.png', title: 'Goal-based financial planning', description: 'We all have different goals at various stages of our life. So, let us build a customized financial plan just for you.' },
-        { img: '../assets/image/sid12.png', title: 'Insurance Planning', description: 'We would love to choose the right insurance for you that covers risk for you and your loved ones.' },
-        { img: '../assets/image/sid13.png', title: 'Existing Portfolio Review', description: 'Invested somewhere but not making good returns? Why don’t we look at your portfolio and make some tweaks?' },
-        { img: '../assets/image/sid11.png', title: 'Loan Planning', description: 'Suffocated in a debt trap? Let’s review your existing loans and EMIs and help you get sorted.' },
-        { img: '../assets/image/sid10.png', title: 'Fixed income Investment advisory', description: 'Proposing stable investment options tailored to meet your short-term financial requirements.' },
-        { img: '../assets/image/sld1.png', title: 'Estate Planning', description: 'We also help you keep your assets and investments safe and in the right hands even when you are not around.' },
-        { img: '../assets/image/sld2.png', title: 'Cash flow Management', description: 'Maximize your savings and establish an ideal emergency fund.' },
+        { img: '/img/budzee/sid6.png', title: 'Goal-based financial planning', description: 'We all have different goals at various stages of our life. So, let us build a customized financial plan just for you.' },
+        { img: '/img/budzee/sid12.png', title: 'Insurance Planning', description: 'We would love to choose the right insurance for you that covers risk for you and your loved ones.' },
+        { img: '/img/budzee/sid13.png', title: 'Existing Portfolio Review', description: 'Invested somewhere but not making good returns? Why don’t we look at your portfolio and make some tweaks?' },
+        { img: '/img/budzee/sid11.png', title: 'Loan Planning', description: 'Suffocated in a debt trap? Let’s review your existing loans and EMIs and help you get sorted.' },
+        { img: '/img/budzee/sid10.png', title: 'Fixed income Investment advisory', description: 'Proposing stable investment options tailored to meet your short-term financial requirements.' },
+        { img: '/img/budzee/sld1.png', title: 'Estate Planning', description: 'We also help you keep your assets and investments safe and in the right hands even when you are not around.' },
+        { img: '/img/budzee/sld2.png', title: 'Cash flow Management', description: 'Maximize your savings and establish an ideal emergency fund.' },
       ],
      
         pcFaq: [

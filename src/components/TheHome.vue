@@ -647,6 +647,10 @@
 </template>
 
 <style scoped>
+@import '../assets/style1.css';
+@import '../assets/style2.css';
+@import '../assets/style3.css';
+
 .mil-p-160-130 {
   background: linear-gradient(90deg, #192626, #1b1d1d);
 }
