@@ -1,3 +1,35 @@
 /* @import './style1.css';
 @import './style2.css';
 @import './style3.css'; */
+.sectiona1 {
+  width: 100%;
+  background-color: #d0e4e3;
+  margin: auto;
+  padding: 20px 20px;
+}
+.bg_dark {
+  background: linear-gradient(90deg, #192626, #1b1d1d);
+}
+.dk h2 {
+  color: #0d5152;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: helvetica;
+}
+.light h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: helvetica;
+}
+.light h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: helvetica;
+}
+.ds_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

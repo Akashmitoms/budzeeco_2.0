@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../components/Home.vue'
 import Calculator from '../components/Calculator.vue'
 import TheHome from '../components/TheHome.vue'
+import MasterClass from '../components/MasterClass.vue'
 import MyMentor from '../components/MyMentor.vue'
 import FdCalculator from '../components/Calculations/FdCalculator.vue'
 import CagrCalculation from '../components/Calculations/CagrCalculation.vue'
@@ -16,6 +17,8 @@ import SipCalculation from '../components/Calculations/SipCalculation.vue'
 import SsyCalculation from '../components/Calculations/SsyCalculation.vue'
 import TaxCalculation from '../components/Calculations/TaxCalculation.vue'
 
+import PaymentPage from '../components/SubPages/PaymentPage.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +27,11 @@ const router = createRouter({
       path: '/',
       name: 'TheHome',
       component: TheHome,
+    },
+    {
+      path: '/masterClass',
+      name: 'MasterClass',
+      component: MasterClass,
     },
     {
       path: '/myMentor',
@@ -94,6 +102,11 @@ const router = createRouter({
       path: '/tax-calculation',
       name: 'TaxCalculation',
       component: TaxCalculation,
+    },
+    {
+      path: '/paymentPage',
+      name: 'PaymentPage',
+      component: PaymentPage,
     },
   ]
 })

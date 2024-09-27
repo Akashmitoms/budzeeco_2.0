@@ -388,45 +388,6 @@
             <div class="mil-testi-pagination mil-up"></div>
           </div>
         </div>
-        <div class="mil-brands mil-p-0-160">
-          <div class="container">
-            <h5 class="mil-text-center mil-soft mil-mb-60 mil-up">
-              Join over 7,000 satisfied customers who enjoy our service!
-            </h5>
-            <div class="row justify-content-center">
-              <div class="col-6 col-md-2 mil-text-center">
-                <div class="mil-brand">
-                  <img src="/img/brands/1.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-              <div class="col-6 col-md-2 mil-text-center">
-                <div class="mil-brand">
-                  <img src="/img/brands/2.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-              <div class="col-6 col-md-2 mil-text-center">
-                <div class="mil-brand">
-                  <img src="/img/brands/3.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-              <div class="col-6 col-md-2">
-                <div class="mil-brand mil-text-center">
-                  <img src="/img/brands/4.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-              <div class="col-6 col-md-2">
-                <div class="mil-brand mil-text-center">
-                  <img src="/img/brands/5.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-              <div class="col-6 col-md-2">
-                <div class="mil-brand mil-text-center">
-                  <img src="/img/brands/6.svg" alt="brand" class="mil-up" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="mil-cta mil-up">
           <div class="container">
             <div class="mil-out-frame mil-image-2 mil-bg-2">

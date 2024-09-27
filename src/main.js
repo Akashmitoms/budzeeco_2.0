@@ -12,11 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 
-import { faBullseye, faChartLine, faChevronRight, faCircleDollarToSlot, faCoins, faFileInvoiceDollar, faFileSignature, faHouseCircleCheck, faMoneyBills, faMoneyBillTrendUp, faPiggyBank, faSackDollar } from '@fortawesome/free-solid-svg-icons'
+import { faBullseye, faChartLine, faChevronRight, faCircleDollarToSlot, faCoins, faFileInvoiceDollar, faFileSignature, faGraduationCap, faHouseCircleCheck, faMoneyBills, faMoneyBillTrendUp, faPiggyBank, faSackDollar } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faPiggyBank, faMoneyBillTrendUp, faCoins, faChartLine, faFileInvoiceDollar, faHouseCircleCheck, faSackDollar, faFileSignature, faCircleDollarToSlot,
-    faBullseye, faMoneyBills, faChevronRight )
+    faBullseye, faMoneyBills, faChevronRight, faGraduationCap )
 
 
 const app = createApp(App)

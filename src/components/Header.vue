@@ -8,7 +8,7 @@
           <nav class="mil-top-menu">
             <ul>
               <li class="mil-has-children mil-active">
-                <a href="#.">MASTERCLASS​</a>
+                <RouterLink to="/masterClass">MASTERCLASS​</RouterLink>
               </li>
               <li class=""><RouterLink to="/calculator">CALCULATORS​</RouterLink></li>
               <li class=""><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
@@ -32,5 +32,9 @@
 @import '../assets/style1.css';
 @import '../assets/style2.css';
 @import '../assets/style3.css';
+
+.mil-top-panel {
+  background: linear-gradient(90deg, #1b1d1d, #0d5152 50%, #1b1d1d);
+}
 
 </style>
