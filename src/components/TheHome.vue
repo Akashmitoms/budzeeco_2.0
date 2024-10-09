@@ -1,19 +1,16 @@
 <template>
   <div>
     <div id="smooth-wrapper" class="mil-wrapper">
-      <!-- <div class="mil-progress-track"><div class="mil-progress"></div></div> -->
       <div id="smooth-content">
         <div class="mil-banner mil-dark-1">
           <div class="mil-radial-g-1"></div>
           <div class="container">
             <div class="row align-items-center">
               <div class="col-xl-6">
-                <div class="mil-banner-text">
+                <div class="mil-banner-text"><br>
                   <h2 class="mil-display mil-text-gradient mil-mb-60">
-                    SIMPLIFYING PERSONAL FINANCE & HELPING PEOPLE ACHIEVE<!-- -->
-                    <span class="mil-text-img"
-                      ><img src="/img/home-4/Vector.svg" alt="icon" /></span
-                    >FINANCIAL FREEDOM
+                    SIMPLIFYING PERSONAL FINANCE & HELPING PEOPLE ACHIEVE
+                   FINANCIAL FREEDOM
                   </h2>
                   <div class="mil-buttons-frame">
                     <a class="mil-btn mil-md mil-add-arrow" href="register.html"
@@ -25,7 +22,7 @@
               <div class="col-xl-6">
                 <div class="mil-banner-img mil-120">
                   <img
-                    src="/img/home-4/1.png"
+                    src="/img/budzee/fin.png"
                     alt="banner"
                     style="max-width: 105%"
                   />
@@ -37,27 +34,26 @@
         <div class="icon-boxes mil-p-160-130">
           <div class="container">
             <div class="mil-text-center">
-              <h2 class="mil-light mil-mb-30 mil-up">GURUKUL</h2>
-              <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up">
+              <h2 class="mil-light mil-mb-30 mil-up zoomOut">GURUKUL</h2>
+              <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                 Experience the bootcamp training by accessing the <br />finance
                 and other modules by top creators​
               </p>
             </div>
             <div class="row align-items-center">
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-bg-fix mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
                   <img
                     src="/img/home-4/icons/1.svg"
                     alt="icon"
-                    class="mil-mb-30 mil-up"
+                    class="mil-mb-30 mil-up zoomOut"
                   />
-                  <h5 class="mil-mb-20 mil-light mil-up">
+                  <h5 class="mil-mb-20 mil-light mil-up zoomOut">
                     Financial Modules
                   </h5>
                   
-                    <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up">
-                      <li>Interactive Online platform to learn</li>
-                      <li>Modules on Personal Finance, Stock Market and a lot more</li>
+                    <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
+                      <li>Here are some of the best interactive online platforms to learn personal finance, stock market, and more</li>
                     </ul>
                 
                 </div>
@@ -69,30 +65,28 @@
                   <img
                     src="/img/home-4/icons/2.svg"
                     alt="icon"
-                    class="mil-mb-30 mil-up"
+                    class="mil-mb-30 mil-up zoomOut"
                   />
-                  <h5 class="mil-mb-20 mil-light mil-up">Gamified Modules</h5>
+                  <h5 class="mil-mb-20 mil-light mil-up zoomOut">Gamified Modules</h5>
                  
-                   <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up">
+                   <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
                     <li>A Gamified Learning Experience, to help you learn better.</li>
-                    <li>Get coins, xp and compete with other members for the top spot on the leaderboard.</li>
                    </ul>
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
-                <div class="mil-icon-box mil-bg-fix mil-center mil-up">
+                <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up">
                   <img
                     src="/img/home-4/icons/3.svg"
                     alt="icon"
-                    class="mil-mb-30 mil-up"
+                    class="mil-mb-30 mil-up zoomOut"
                   />
-                  <h5 class="mil-mb-20 mil-light mil-up">
+                  <h5 class="mil-mb-20 mil-light mil-up zoomOut">
                    Community Bootcamps
                   </h5>
                  
-                    <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up">
-                      <li>Learning is never alone, learn with a community of 50,000+</li>
-                      <li>One of a kind Community Lerning Experience resulting in a stellar completion rate of 93%.</li>
+                    <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
+                      <li>Learning is never alone, learn with a community resulting in a stellar completion rate of 100%.</li>
                     </ul>
                 </div>
               </div>
@@ -105,24 +99,15 @@
               class="row flex-sm-row-reverse justify-content-between align-items-center"
             >
               <div class="col-xl-6 mil-mb-80">
-                <h2 class="mil-mb-30 mil-light mil-up">
+                <h2 class="mil-mb-30 mil-light mil-up zoomOut">
                   One Stop Solution
                 </h2>
-                <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up">
-                  A one stop Solution for all your<br />
-                  financial problems and helping you implement all<br />
+                <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
+                  A one stop Solution for all your
+                  financial problems and helping you implement all
                   your learnings right from saving to investing.
                 </p>
-                <div class="invisible">
-
-                </div>
-                <div class="mil-up">
-                
-                </div>
-              </div>
-              <div class="col-xl-5 mil-mb-80">
-                <div class="mil-image-frame mil-visible-overflow">
-                 <div class="icon_stamp">
+                <div class="icon_stamp zoomOut">
                   <div class="icon_stamp_con">
                     <img src="/img/budzee/sld1.png" alt="">
                     <p>Savings</p>
@@ -133,21 +118,26 @@
                   </div>
                   <div class="icon_stamp_con">
                     <img src="/img/budzee/sid13.png" alt="">
-                    <p>Insurance</p>
+                    <p>Mutual Funds</p>
                   </div>
                 </div>
-                <div class="icon_stamp">
+                <div class="icon_stamp zoomOut">
                   <div class="icon_stamp_con">
                     <img src="/img/budzee/sid11.png" alt="">
-                    <p>Insurance</p>
+                    <p>Tax</p>
                   </div>
                   <div class="icon_stamp_con">
                     <img src="/img/budzee/sid12.png" alt="">
-                    <p>Insurance</p>
+                    <p>Loans</p>
                   </div>
                 </div>
+                <div class="mil-up">
                 
-                  
+                </div>
+              </div>
+              <div class="col-xl-5 mil-mb-80">
+                <div class="mil-image-frame mil-visible-overflow zoomOut">
+                  <img src="/img/budzee/stop div.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -157,10 +147,10 @@
           <div class="container">
             <div class="row justify-content-between align-items-center">
               <div class="col-xl-6 mil-mb-80">
-                <h2 class="mil-mb-30 mil-light mil-up">
+                <h2 class="mil-mb-30 mil-light mil-up zoomOut">
                   Smart, simple financial planner.
                 </h2>
-                <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up">
+                <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                   Whether you’re looking to plan for retirement, save for your
                   child’s education, or invest in your future, we have the
                   expertise and tools to help you succeed.
@@ -184,17 +174,17 @@
                 class="row flex-sm-row-reverse justify-content-between align-items-center"
               >
                 <div class="col-xl-6">
-                  <h2 class="mil-light mil-mb-30 mil-up">
+                  <h2 class="mil-light mil-mb-30 mil-up zoomOut">
                     Events And Workshops
                   </h2>
-                  <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up">
-                    grow your network with exceptional individuals and have fun with finance and careers at our pan India meet-ups
+                  <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
+                    Grow your network with exceptional individuals and have fun with finance and careers at our pan India meet-ups
                   </p>
-                  
+                  <img src="/img/budzee/Blank 2 Grids Collage.png" width="70%" class="zoomOut" alt="">
                 </div>
                 <div class="col-xl-5">
-                  <div class="mil-image-frame mil-visible-overflow">
-                    <img src="/img/budzee/m1.jpg  " alt="image" class="mil-up" />
+                  <div class="mil-image-frame mil-visible-overflow zoomOut">
+                    <img src="/img/budzee/Four Rectangle Collage Blank.png" width="100%" alt="image" class="mil-up" />
                     
                   </div>
                 </div>
@@ -205,17 +195,25 @@
         <div class="mil-blog-list mil-p-160-130">
           <div class="container">
             <div class="mil-text-center">
-              <h2 class="mil-light mil-mb-30 mil-up">
+              <h2 class="mil-light mil-mb-30 mil-up zoomOut">
                 Our Community members <br> workplace​
               </h2>
              
             </div>
             <div class="workplace">
-              <div class="workplace_con">
-                <img src="/img/budzee/icons8-amazon-144.png" alt="">
+              <div class="workplace_con zoomOut">
+                <img src="\img\budzee\icons8-amazon-144 p.png" alt="" style="background-color: white;">
                 <img src="/img/budzee/icons8-google-144.png" alt="">
                 <img src="/img/budzee/icons8-walmart-app-200.png" alt="">
-                <img src="/img/budzee/icons8-zomato-150.png" alt="">
+                <img src="\img\budzee\zomato-fotor.png" alt="">
+              </div>
+            </div>
+            <div class="workplace">
+              <div class="workplace_con zoomOut">
+                <img src="\img\budzee\Logo-Final-avanika.png" alt="">
+                <img src="\img\budzee\L04.png" alt="">
+                <img src="\img\budzee\icons8-msx-logo-128.png" alt="">
+                <img src="\img\budzee\dxc.jpeg" alt="">
               </div>
             </div>
           </div>
@@ -227,14 +225,14 @@
                 class="row justify-content-center align-items-center mil-p-160-160"
               >
                 <div class="col-xl-7 mil-text-center">
-                  <h2 class="mil-mb-30 mil-up">
+                  <h2 class="mil-mb-30 mil-up zoomOut">
                     Your financial peace of mind is our Total priority
                   </h2>
-                  <p class="mil-text-m mil-soft mil-mb-60 mil-up">
+                  <p class="mil-text-m mil-soft mil-mb-60 mil-up zoomOut">
                     At Budzeeco, we understand the importance of the security
                     <br />and privacy of your financial data.
                   </p>
-                  <div class="mil-up">
+                  <div class="mil-up zoomOut">
                     <a class="mil-btn mil-md mil-add-arrow" href="about.html"
                       >Join Now</a
                     >
@@ -395,20 +393,20 @@
                 class="row justify-content-center align-items-center mil-p-160-0"
               >
                 <div class="col-xl-7 mil-text-center">
-                  <h2 class="mil-light mil-mb-30 mil-up">
+                  <h2 class="mil-light mil-mb-30 mil-up zoomOut">
                     Transform your Financial Future with Budzeeco!
                   </h2>
-                  <p class="mil-text-l mil-light mil-mb-60 mil-up">
+                  <p class="mil-text-l mil-light mil-mb-60 mil-up zoomOut">
                     With our intuitive and personalized tools, achieving your financial goals and financial freedom is within your reach. 
                     Invest in your financial success today with BUDZEECO​!&quot;
                   </p>
                   <div class="mil-up mil-mb-80">
-                    <a class="mil-btn mil-md mil-add-arrow" href="register.html"
+                    <a class="mil-btn mil-md mil-add-arrow zoomOut" href="register.html"
                       >JOIN  COMMUNITY​</a
                     >
                   </div>
                 </div>
-                <div class="mil-illustration-absolute mil-type-3 mil-up">
+                <div class="mil-illustration-absolute mil-type-3 mil-up zoomOut">
                   <img src="/img/home-4/5.png" alt="illustration" />
                 </div>
               </div>
@@ -420,10 +418,10 @@
             <div class="row justify-content-center">
               <div class="col-xl-8">
                 <div class="mil-text-center">
-                  <h2 class="mil-light mil-mb-30 mil-up">
+                  <h2 class="mil-light mil-mb-30 mil-up zoomOut">
                     Explore Our Frequently <br />Asked Questions
                   </h2>
-                  <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up">
+                  <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                     Find quick and clear answers to the most common
                     <br />questions about Budzeeco
                   </p>
@@ -431,7 +429,7 @@
                 <div class="mil-accordion">
                   <div class="mil-accordion-group mil-up">
                     <div class="mil-accordion-menu">
-                      <h5 class="mil-light">How can I send money with Budzeeco?</h5>
+                      <h5 class="mil-light zoomOut">How can I send money with Budzeeco?</h5>
                       <div class="mil-accordion-icon">
                         <i class="fas fa-chevron-up"></i>
                       </div>
@@ -451,7 +449,7 @@
                   </div>
                   <div class="mil-accordion-group mil-up">
                     <div class="mil-accordion-menu">
-                      <h5 class="mil-light">
+                      <h5 class="mil-light zoomOut">
                         What security measures does Budzeeco have to protect my
                         transactions?
                       </h5>
@@ -475,7 +473,7 @@
                   </div>
                   <div class="mil-accordion-group mil-up">
                     <div class="mil-accordion-menu">
-                      <h5 class="mil-light">
+                      <h5 class="mil-light zoomOut">
                         What is the coverage of the Budzeeco network?
                       </h5>
                       <div class="mil-accordion-icon">
@@ -495,7 +493,7 @@
                   </div>
                   <div class="mil-accordion-group mil-up">
                     <div class="mil-accordion-menu">
-                      <h5 class="mil-light">
+                      <h5 class="mil-light zoomOut">
                         How can I contact Budzeeco customer service?
                       </h5>
                       <div class="mil-accordion-icon">
@@ -525,93 +523,64 @@
             </div>
           </div>
         </div>
-        <footer class="mil-footer-dark mil-p-160-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-9 mil-mb-60 mil-footer-space-fix">
-                <a href="#." class="mil-footer-logo mil-logo-2 mil-mb-60"
-                  ><img
-                    src="/img/logo-light.png"
-                    alt="Budzeeco"
-                    width="83"
-                    height="32"
-                /></a>
-                <ul class="mil-footer-list mil-footer-list-2">
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    <a href="about.html">About Us</a>
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    <a href="services.html">Services</a>
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    <a href="price.html">Pricing</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xl-3 mil-mb-60">
-                <ul class="mil-footer-list">
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    999 Rue du Cherche-Midi, 7755500666 Paris, <br />France
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    +001 (808) 555-0111
-                  </li>
-                  <li class="mil-text-m mil-dark-soft mil-mb-15">
-                    support@Budzeeco.network
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="mil-footer-bottom">
-              <div class="row">
-                <div class="col-xl-6">
-                  <p class="mil-text-s mil-dark-soft">
-                    © 2024 Budzeeco Finance &amp; Fintech Design
-                  </p>
-                </div>
-                <div class="col-xl-6">
-                  <p
-                    class="mil-text-s mil-text-right mil-sm-text-left mil-dark-soft"
-                  >
-                    Developed by<!-- -->
-                    <a href="https://bslthemes.com/" target="blank"
-                      >bslthemes</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
     <div class="bsl-popup" data-theme="plax" data-category="react">
       <div class="bsl-popup__buttons"></div>
       <div class="bsl-popup__content bsl-popup__content-related">
         <div class="bsl-popup__menu"></div>
-        <div class="bsl-popup__tabs">
-          <div class="bsl-popup__tab bsl-popup__tab-demo"></div>
-          <div class="bsl-popup__tab bsl-popup__tab-all"></div>
-          <div class="bsl-popup__tab bsl-popup__tab-related"></div>
-          <div class="bsl-popup__tab bsl-popup__tab-version"></div>
-        </div>
+        
       </div>
       <div class="bsl-popup__content bsl-popup__content-help"></div>
     </div>
   </div>
 </template>
 
+<script>
+import { gsap} from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+export default {
+  name: "TheHome",
+methods: {
+  animaFunction(){
+    const zoomOutElements = this.$el.querySelectorAll('.zoomOut');
+  zoomOutElements.forEach(zoomOut => {
+      gsap.from(zoomOut, {
+        scale: 0,
+        duration: 1,
+        y: 50,
+        scrollTrigger: {
+          trigger: zoomOut,
+          start: 'top 95%',
+          end: 'top 81%',
+          scrub: 1,
+          markers: false
+        }
+      });
+    });
+  }
+},
+
+ mounted(){
+  gsap.registerPlugin(ScrollTrigger);
+  this.animaFunction();
+ }
+};
+</script>
+
 <style scoped>
 @import '../assets/style1.css';
 @import '../assets/style2.css';
 @import '../assets/style3.css';
 
+.mil-mb-20 h2{
+  font-size: 3.5rem;
+  background-color: white;
+}
+.mil-text-l{
+  font-size: 1.2rem;
+}
 .mil-p-160-130 {
   background: linear-gradient(90deg, #192626, #1b1d1d);
 }
@@ -623,8 +592,8 @@
 }
 .icon_stamp{
  display: flex;
-margin-bottom: 12%;
-gap: 20px;
+margin-bottom: 3%;
+gap: 15px;
 
 }
 .icon_stamp_con{
@@ -662,5 +631,18 @@ color: white;
 }
 .invisible{
   height: 40vh;
+}
+.mil-wrapper{
+  background: linear-gradient(90deg, #192626, #1b1d1d);
+}
+/* mil-icon-box mil-with-bg mil-dark mil-center mil-up */
+.mil-icon-box{
+  max-height: 55vh;
+}
+.mil-icon-box h5{
+  font-size: 1.8rem;
+}
+.mil-icon-box img{
+  width: 30%;
 }
 </style>
