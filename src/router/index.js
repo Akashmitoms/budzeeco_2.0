@@ -4,6 +4,7 @@ import Calculator from '../components/Calculator.vue'
 import TheHome from '../components/TheHome.vue'
 import MasterClass from '../components/MasterClass.vue'
 import MyMentor from '../components/MyMentor.vue'
+import Brand from '../components/Brand.vue'
 import FdCalculator from '../components/Calculations/FdCalculator.vue'
 import CagrCalculation from '../components/Calculations/CagrCalculation.vue'
 import FireCalculation from '../components/Calculations/FireCalculation.vue'
@@ -37,6 +38,11 @@ const router = createRouter({
       path: '/myMentor',
       name: 'MyMentor',
       component: MyMentor,
+    },
+    {
+      path: '/brand',
+      name: 'Brand',
+      component: Brand,
     },
     {
       path: '/calculator',

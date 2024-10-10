@@ -13,7 +13,7 @@
             <RouterLink to="/calculator">CALCULATORS​</RouterLink>
           </li>
           <li class=""><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
-          <li class=""><RouterLink to="/">BRAND</RouterLink></li>
+          <li class=""><RouterLink to="/brand">BRAND</RouterLink></li>
         </ul>
       </nav>
       <div class="mil-menu-buttons">

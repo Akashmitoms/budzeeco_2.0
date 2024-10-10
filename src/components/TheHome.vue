@@ -22,9 +22,10 @@
               <div class="col-xl-6">
                 <div class="mil-banner-img mil-120">
                   <img
-                    src="/img/budzee/fin.png"
+                    src="\img\budzee\hom1.png"
                     alt="banner"
-                    style="max-width: 105%"
+                    style="max-width: 110%; border-radius: 20px;"
+
                   />
                 </div>
               </div>

@@ -13,7 +13,7 @@
           <li><RouterLink to="/masterClass"><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> MASTERCLASS</RouterLink></li>
           <li><RouterLink to="/calculator"><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> CALCULATOR</RouterLink></li>
           <li><RouterLink to="/myMentor"><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> MY MENTOR</RouterLink></li>
-          <li><RouterLink to="/"><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> BRAND</RouterLink></li>
+          <li><RouterLink to="/brand"><span><font-awesome-icon :icon="['fas', 'angles-right']" /></span> BRAND</RouterLink></li>
         </ul>
       </div>
       <div class="fooetr_sec">

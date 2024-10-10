@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="head1">
-      <div @click="$router.push('/')"><img src="/img/logo budzeeco_1.jpg" /></div>
+      <div @click="$router.push('/')"><img src="/img/PNG Logo -1.png" /></div>
       <span @click="toggleMenu"><font-awesome-icon :icon="['fas', 'bars']" /></span>
     </div>
     <div class="head2" v-if="showMenu">
