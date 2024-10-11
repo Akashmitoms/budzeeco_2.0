@@ -24,7 +24,7 @@
                   <img
                     src="\img\budzee\hom1.png"
                     alt="banner"
-                    style="max-width: 105%; border-radius: 20px;"
+                    style="max-width: 105%; border-radius: 20px; margin-top: 1rem;"
 
                   />
                 </div>
@@ -35,7 +35,7 @@
         <div class="icon-boxes mil-p-160-130">
           <div class="container">
             <div class="mil-text-center">
-              <h2 class="mil-light mil-mb-30 mil-up zoomOut">GURUKUL</h2>
+              <h2 class="mil-light mil-mb-30 mil-up zoomOut" id="gurukul">GURUKUL</h2>
               <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                 Experience the bootcamp training by accessing the <br />finance
                 and other modules by top creators​
@@ -160,9 +160,9 @@
                 
               </div>
               <div class="col-xl-5 mil-mb-80">
-                <div class="mil-image-frame mil-visible-overflow">
-                
-                 <h1> screen shot of calculator page.</h1>
+                <div class="mil-image-frame mil-visible-overflow image zoomOut">
+                <img src="/img/budzee/Screenshot c2-fotor-20241011213055.png" alt="">
+                <img src="/img/budzee/Screenshot c3-fotor-2024101121340.png" alt="">
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@
                   <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                     Grow your network with exceptional individuals and have fun with finance and careers at our pan India meet-ups
                   </p>
-                  <img src="/img/budzee/Blank 2 Grids Collage.png" width="70%" class="zoomOut" alt="">
+                  <img src="/img/budzee/Blank 2 Grids Collage.png" width="90%" class="zoomOut" alt="">
                 </div>
                 <div class="col-xl-5">
                   <div class="mil-image-frame mil-visible-overflow zoomOut">
@@ -575,6 +575,13 @@ methods: {
 @import '../assets/style2.css';
 @import '../assets/style3.css';
 
+.image{
+  display: flex;
+  gap: 10px;
+}
+.image img{
+  width: 100%;
+}
 .mil-mb-20 h2{
   font-size: 3.5rem;
   background-color: white;
@@ -650,7 +657,9 @@ color: white;
 @media screen and (max-width: 450px){
   .mil-banner{
   margin-top: 0;
+  padding-top: 0;
 }
+
 }
 
 </style>
