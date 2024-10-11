@@ -27,7 +27,7 @@
     <div class="sec1">
       <div class="sec1a">
         <span
-          ><img src="\img\budzee\icon\icons8-receive-cash-100.png" alt=""
+          ><img src="\img\budzee\icon\icons8-rupee-100.png" alt=""
         /></span>
         <h2>How to invest your money</h2>
       </div>
@@ -55,7 +55,7 @@
     <div class="sec1">
       <div class="sec1a">
         <span
-          ><img src="\img\budzee\icon\icons8-receive-cash-100.png" alt=""
+          ><img src="\img\budzee\icon\icons8-money-bag-100.png" alt=""
         /></span>
         <h2>How to achieve financial freedom</h2>
       </div>
@@ -83,7 +83,7 @@
     <div class="sec1">
       <div class="sec1a">
         <span
-          ><img src="\img\budzee\icon\icons8-receive-cash-100.png" alt=""
+          ><img src="\img\budzee\icon\icons8-coins-100.png" alt=""
         /></span>
         <h2>How to plan for your financial goals</h2>
       </div>
@@ -111,7 +111,7 @@
     <div class="sec1">
       <div class="sec1a">
         <span
-          ><img src="\img\budzee\icon\icons8-receive-cash-100.png" alt=""
+          ><img src="\img\budzee\icon\icons8-card-security-100.png" alt=""
         /></span>
         <h2>How to clear loans & credit card dues fast</h2>
       </div>
@@ -139,7 +139,7 @@
     <div class="sec1">
       <div class="sec1a">
         <span
-          ><img src="\img\budzee\icon\icons8-receive-cash-100.png" alt=""
+          ><img src="\img\budzee\icon\icons8-price-comparison-100.png" alt=""
         /></span>
         <h2>How to retire early & beat inflation</h2>
       </div>
@@ -317,7 +317,7 @@ export default {
   padding: 2%;
   display: flex;
   gap: 3%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin-bottom: 7%;
 }
@@ -333,6 +333,7 @@ export default {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .sec1 h6 {
   color: #a0cdcd;
