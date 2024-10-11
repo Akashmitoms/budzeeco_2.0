@@ -13,7 +13,7 @@
             <RouterLink to="/calculator" class="link" @click="toggleMenu">CALCULATORS​</RouterLink>
           </li>
           <li ><RouterLink to="/myMentor" class="link" @click="toggleMenu">MY MENTOR</RouterLink></li>
-          <li ><RouterLink to="/" class="link" @click="toggleMenu">PROGRAMS</RouterLink></li>
+          <li ><RouterLink to="/brand" class="link" @click="toggleMenu">BRAND</RouterLink></li>
         </ul>
         <div class="btn_box">
         <button class="butn">Log In</button>

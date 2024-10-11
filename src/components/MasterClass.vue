@@ -18,7 +18,7 @@
             <h2>Personal <br> Finanace <br> Mastery</h2>
           </div>
           <div class="sec2b">
-            <h1>image</h1>
+            <img src="\img\budzee\anoop_kv -1-fotor-bg-remover.png" alt="">
           </div>
         </div>
         <div class="sec2_con bg_dark"> 
@@ -31,6 +31,7 @@
         </div>
       </div>
     </div>
+    
   </section>
   <PersonalFinance />
 </template>
@@ -60,7 +61,7 @@ export default {
   align-items: center;
 }
 .sec1 {
-  margin-top: 3%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +109,7 @@ export default {
   text-align: center;
   margin-top: 5%;
   gap: 1.5rem;
+  background-color: #d0e4e3;
 }
 .sec2 h1 {
   color: #0d5152;
@@ -140,12 +142,16 @@ export default {
   border-radius: 20px 20px 0 0;
   background: linear-gradient(90deg, #1b1d1d, #0d5152 50%, #1b1d1d);
 }
-.ds_flex > div {
-  width: 50%;
-  height: 100%;
+.sec2a {
+  width: 40%;
   text-align: left;
   padding: 1rem;
-  height: 40vh;
+}
+.sec2b {
+  width: 60%;
+  text-align: left;
+  padding: 1rem;
+  
 }
 .sec2_con{
   text-align: left;
@@ -175,5 +181,45 @@ export default {
   border-radius: 25px;
   cursor: pointer;
   margin: 2% 3%;
+}
+.sec2a h2 {
+  color: white;
+  font-size: 6vw;
+  font-weight: 700;
+  font-family: helvetica;
+ text-align: center;
+}
+.sec2b img{
+  width: 75%;
+}
+
+@media screen and (max-width: 710px) {
+  .sec1 h3 {
+    font-size: 1.8rem;
+  }
+  .bg{
+    height: 45vh;
+  }
+  .sec1 h1 {
+    font-size: 3.5em;
+    line-height: 6rem;
+  }
+  .sec1 p {
+    font-size: 1rem;
+  }
+  .sec1 button {
+    font-size: 1.2rem;
+  }
+  .ds_flex{
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-top: 0;
+  }
+  .sec2a, .sec2b{
+    width: 100%;
+  }
+  .sec2a h2 {
+    font-size: 12vw;
+  }
 }
 </style>

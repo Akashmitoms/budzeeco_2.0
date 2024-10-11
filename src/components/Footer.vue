@@ -21,7 +21,7 @@
         <ul>
             <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'phone-volume']" /></span> 9846xxxxxx</li>
             <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'envelope']" /></span> contact@budzeeco.com</li>
-            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'map-location-dot']" /></span> Delhi</li>
+            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'map-location-dot']" /></span> Hyderabad</li>
         </ul>
         <h5>Follow Us On:</h5>
         <span class="social_media">

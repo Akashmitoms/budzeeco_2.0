@@ -24,7 +24,7 @@
                   <img
                     src="\img\budzee\hom1.png"
                     alt="banner"
-                    style="max-width: 110%; border-radius: 20px;"
+                    style="max-width: 105%; border-radius: 20px;"
 
                   />
                 </div>
@@ -646,4 +646,11 @@ color: white;
 .mil-icon-box img{
   width: 30%;
 }
+
+@media screen and (max-width: 450px){
+  .mil-banner{
+  margin-top: 0;
+}
+}
+
 </style>
