@@ -31,7 +31,6 @@
         </div>
       </div>
     </div>
-    
   </section>
   <PersonalFinance />
 </template>

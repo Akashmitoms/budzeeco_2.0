@@ -17,6 +17,7 @@ import RdCalculation from '../components/Calculations/RdCalculation.vue'
 import SipCalculation from '../components/Calculations/SipCalculation.vue'
 import SsyCalculation from '../components/Calculations/SsyCalculation.vue'
 import TaxCalculation from '../components/Calculations/TaxCalculation.vue'
+import BookCall from '../components/SubPages/BookCall.vue'
 
 import PaymentPage from '../components/SubPages/PaymentPage.vue'
 
@@ -113,6 +114,11 @@ const router = createRouter({
       path: '/paymentPage',
       name: 'PaymentPage',
       component: PaymentPage,
+    },
+    {
+      path: '/bookCall',
+      name: 'BookCall',
+      component: BookCall,
     },
   ]
 })

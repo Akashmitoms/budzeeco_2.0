@@ -162,7 +162,7 @@
               <div class="col-xl-5 mil-mb-80">
                 <div class="mil-image-frame mil-visible-overflow image zoomOut">
                 <img src="/img/budzee/Screenshot c2-fotor-20241011213055.png" alt="">
-                <img src="/img/budzee/Screenshot c3-fotor-2024101121340.png" alt="">
+                <img src="/img/budzee/Screenshot c3-fotor-2024101121340.png" alt="" width="70%">
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="mil-testimonials mil-p-0-160">
+        <!-- <div class="mil-testimonials mil-p-0-160">
           <div class="container">
             <div class="swiper swiper-container mil-testimonials-2 mil-up">
               <div class="swiper-wrapper">
@@ -386,7 +386,7 @@
             </div>
             <div class="mil-testi-pagination mil-up"></div>
           </div>
-        </div>
+        </div> -->
         <div class="mil-cta mil-up">
           <div class="container">
             <div class="mil-out-frame mil-image-2 mil-bg-2">
@@ -427,99 +427,14 @@
                     <br />questions about Budzeeco
                   </p>
                 </div>
-                <div class="mil-accordion">
-                  <div class="mil-accordion-group mil-up">
-                    <div class="mil-accordion-menu">
-                      <h5 class="mil-light zoomOut">How can I send money with Budzeeco?</h5>
-                      <div class="mil-accordion-icon">
-                        <i class="fas fa-chevron-up"></i>
-                      </div>
-                    </div>
-                    <div class="mil-accordion-content">
-                      <p class="mil-text-m mil-soft">
-                        Discover the step-by-step process to make money
-                        transfers easily and securely with Budzeeco. <br />
-                        <br />
-                        When I hear the buzz of the little world among the
-                        stalks, and grow familiar with the countless
-                        indescribable forms of the insects and flies, then I
-                        feel the presence of the Almighty, who formed us in his
-                        own image, and the breath
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mil-accordion-group mil-up">
-                    <div class="mil-accordion-menu">
-                      <h5 class="mil-light zoomOut">
-                        What security measures does Budzeeco have to protect my
-                        transactions?
-                      </h5>
-                      <div class="mil-accordion-icon">
-                        <i class="fas fa-chevron-up"></i>
-                      </div>
-                    </div>
-                    <div class="mil-accordion-content">
-                      <p class="mil-text-m mil-soft">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Dolore assumenda mollitia magni quisquam incidunt
-                        necessitatibus error delectus commodi ad exercitationem,
-                        dolorem iusto placeat pariatur et aspernatur totam
-                        sapiente similique voluptatem quae sunt iste officia
-                        sint laborum eum, eos. Molestias modi aliquam accusamus
-                        dolore. Mollitia quod omnis ea fugit rem nesciunt ad
-                        provident ratione, culpa ex laudantium, enim sit ut
-                        eius.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mil-accordion-group mil-up">
-                    <div class="mil-accordion-menu">
-                      <h5 class="mil-light zoomOut">
-                        What is the coverage of the Budzeeco network?
-                      </h5>
-                      <div class="mil-accordion-icon">
-                        <i class="fas fa-chevron-up"></i>
-                      </div>
-                    </div>
-                    <div class="mil-accordion-content">
-                      <p class="mil-text-m mil-soft">
-                        Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas. Vestibulum tortor
-                        quam, feugiat vitae, ultricies eget, tempor sit amet,
-                        ante. Donec eu libero sit amet quam egestas semper.
-                        Aenean ultricies mi vitae est. Mauris placerat eleifend
-                        leo.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mil-accordion-group mil-up">
-                    <div class="mil-accordion-menu">
-                      <h5 class="mil-light zoomOut">
-                        How can I contact Budzeeco customer service?
-                      </h5>
-                      <div class="mil-accordion-icon">
-                        <i class="fas fa-chevron-up"></i>
-                      </div>
-                    </div>
-                    <div class="mil-accordion-content">
-                      <p class="mil-text-m mil-soft">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repellat quo ullam maiores reiciendis,
-                        voluptatibus quae odio, accusamus facere vero
-                        consectetur! Omnis nobis voluptatum deserunt maxime,
-                        error dolor nulla, perspiciatis assumenda quisquam,
-                        fugiat magnam placeat culpa sit reprehenderit nesciunt
-                        quis praesentium! Quam ullam tempora quidem, totam autem
-                        explicabo alias, obcaecati quaerat earum nisi,
-                        asperiores ea perspiciatis iusto neque. Odit molestias
-                        voluptatem laboriosam distinctio delectus consequatur,
-                        quo nemo nihil, deleniti perspiciatis nisi itaque
-                        similique accusantium facilis asperiores dicta veniam
-                        voluptatum numquam aliquam!
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <section class="section4">
+      <div v-for="faq in pcFaq" :key="faq.id">
+        <div @click="toggleFaq(faq)" class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
+          <h3>{{ faq.question }}</h3>
+          <p v-if="faq.open">{{ faq.answer }}</p>
+        </div>
+      </div>
+    </section>
               </div>
             </div>
           </div>
@@ -543,7 +458,54 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export default {
   name: "TheHome",
+
+  data () {
+    return{
+      pcFaq: [
+          {
+            id: 1,
+            question: "Who needs financial planning?",
+            answer: "Well, pretty much everyone! It doesn't matter how much you earn or how old you are. Financial planning helps you reach your goals, manage your spending, save money, and deal with unexpected financial blocks. Whether you're saving for retirement, paying for school, or just trying to make sure you're covered for the future, financial planning can give you a roadmap to follow.",
+            open: false
+          },
+          {
+            id: 2,
+            question: "Why is financial planning important?",
+            answer: "Financial planning is important because it keeps your money goals in check. By keeping an eye on what you earn, spend, save, and invest, you ensure stability and security for you and your crew. Creating a roadmap for your finances, helping you navigate through life's ups and downs while working towards a prosperous future. Without a solid plan, you might end up struggling to make ends meet or may miss out on big milestones like buying a home, starting a business, or chilling out in retirement. So, by taking the time to plan your finances wisely, you can build a solid foundation for your financial well-being and achieve the things you want in life.",
+            open: false
+          },
+          {
+            id: 3,
+            question: "How much do I have to pay for RIA service?",
+            answer: "According to SEBI rules, Registered Investment Advisors (RIAs) can't earn commissions or brokerage fees from investment products. Instead, they charge advisory fees for their services. These fees usually vary based on your income or family situation. This setup ensures you get personalized financial advice without any hidden agendas or conflicts of interest.",
+            open: false
+          },
+          {
+            id: 4,
+            question: "Is the family included in the financial plan?",
+            answer: "Financial planning can encompass individuals or entire families. Those with spouses and children should ideally include the entire family's income and assets in the plan. This inclusive approach ensures that everyone is aligned with common goals, fostering better coordination and financial stability for the entire household.",
+            open: false
+          },
+          {
+            id: 5,
+            question: "How frequently do I get updates on my plan?",
+            answer: "Your financial advisor serves as your one-stop solution. We believe in fostering two-way relationships. Your financial planner will proactively reach out to you on a monthly or quarterly basis to provide updates on your plan. However, if you need to connect between these scheduled updates, you can always schedule a meeting at your convenience.",
+            open: false
+          },
+        ]
+    }
+  },
 methods: {
+  toggleFaq(faq) {
+      console.log("faq", faq)
+     this.pcFaq.forEach(f =>{
+      if(f.id == faq.id){
+        f.open = !f.open
+      }else{
+        f.open = false
+      }
+     })
+    },
   animaFunction(){
     const zoomOutElements = this.$el.querySelectorAll('.zoomOut');
   zoomOutElements.forEach(zoomOut => {

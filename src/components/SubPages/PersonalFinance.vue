@@ -475,5 +475,11 @@ export default {
   .sec3b img{
     width: 100%;
   }
+  .sec1 h2 {
+    font-size: 1.2rem;
+  }
+  .sec1 h6 {
+    font-size: 0.9rem;
+  }
 }
 </style>

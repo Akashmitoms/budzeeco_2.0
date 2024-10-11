@@ -4,7 +4,7 @@
         <div class="sec_a1">
           <h1>Financial Planning is easier with a Personal Consultant</h1>
           <h5>Get access to Financial Planners who curate a tailored goal-based investment strategy just for you.</h5>
-          <button class="input_btn1" @click="$router.push('/book-call')">Book A Call</button>
+          <button class="input_btn1" @click="$router.push('/bookCall')">Book A Call</button>
         </div>
         <div class="sec_a2">
           <img src="/img/budzee/desk.png" alt="">
