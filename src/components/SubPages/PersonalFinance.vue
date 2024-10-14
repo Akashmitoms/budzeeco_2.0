@@ -1,5 +1,5 @@
 <template>
-  <section class="bg_dark">
+  <section class="bg_dark" ref="bgSection">
 
     <h2>What will you learn </h2>
     <div class="sec1">
@@ -10,13 +10,13 @@
         <h2>How to manage your money</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         Track your savings, investment & expenses.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -32,19 +32,19 @@
         <h2>How to invest your money</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         Diversify investments for protecting and growing your money.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         Start small with SIPs in Mutual Funds.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -60,19 +60,19 @@
         <h2>How to achieve financial freedom</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         Difference between financial freedom and financial independence.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         importance of clearing high interest debts.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -88,19 +88,19 @@
         <h2>How to plan for your financial goals</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
        How to define clear and realistic goals with timelines.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         How to calculate total savings needed to achieve those goals. 
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -116,19 +116,19 @@
         <h2>How to clear loans & credit card dues fast</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         How to get out of the traps of loans.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         How to reduce principal to reduce interest paid on loans.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -144,19 +144,19 @@
         <h2>How to retire early & beat inflation</h2>
       </div>
 
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
        Generating passive income to retire early.
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
         Your FIRE Number (Financial Independence & Retire Early).
       </h6>
-      <h6>
+      <h6 class="sec1_content">
         <span class="icon"
           ><font-awesome-icon :icon="['fas', 'circle-check']"
         /></span>
@@ -164,7 +164,7 @@
       </h6>
     </div>
   </section>
-  <section class="section_b">
+  <section class="section_b" ref="sectionB">
     <h2>Who is this Workshop For?</h2>
     <div class="container_sec2">
       <div class="sec2">
@@ -197,7 +197,7 @@
       </div>
     </div> 
   </section>
-  <section class="sectiona_c">
+  <section class="sectiona_c" ref="sectionC">
     <h2>Meet your mentor</h2>
     <div class="sec3">
       <div class="sec3a">
@@ -236,7 +236,7 @@
   </section>
 </template>
 
-<!-- <script>
+<script>
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -245,7 +245,7 @@ export default {
 
   methods: {
     fadeOut() {
-      const zoomOutElements = this.$el.querySelectorAll(".sec1a, .sec1");
+      const zoomOutElements = this.$refs.bgSection.querySelectorAll(".sec1a, .sec1");
       zoomOutElements.forEach((zoomIn) => {
         gsap.from(zoomIn, {
           opacity: 0,
@@ -261,7 +261,7 @@ export default {
       });
     },
     slideRight() {
-      const zoomOutElements = this.$el.querySelectorAll(".sec1 h6");
+      const zoomOutElements = this.$refs.bgSection.querySelectorAll(".sec1_content");
       zoomOutElements.forEach((zoomIn) => {
         gsap.from(zoomIn, {
           opacity: 0,
@@ -281,11 +281,13 @@ export default {
 
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
-    this.fadeOut();
-    this.slideRight();
+    this.$nextTick(() => {
+      this.fadeOut();
+      this.slideRight();
+    });
   },
 };
-</script> -->
+</script>
 
 <style scoped>
 .icon {

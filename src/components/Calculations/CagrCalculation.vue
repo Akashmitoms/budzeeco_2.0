@@ -9,7 +9,7 @@
         <div class="Effective_returns">
           <div><p>Total Investment: </p> <h6 class="value">{{ initialInvestment }}</h6></div>
           <div class="v_line"></div>
-          <div><p>CAGR: </p> <h6 class="value">{{ cagr }}%</h6></div>
+          <div><p>CAGR: </p> <h6 class="value">{{ formatedNumber }}%</h6></div>
           <div class="v_line"></div>
           <div><p>Final Value: </p><h6 class="value">{{ finalValue }}</h6></div>
         </div>
@@ -171,6 +171,7 @@
 
 <script>
 import ChartDisplay from '../common/ChartDisplay.vue';
+import {formatNumber } from '../CommonFunction/functions.js';
 
 export default {
   name: "CagrCalculation",
@@ -277,6 +278,9 @@ export default {
     },
     cagr() {
       return ((this.calculateCAGR(this.initialInvestment, this.finalValue, this.timePeriod) - 1) * 100).toFixed(2);
+    },
+    formatedNumber() {
+      return formatNumber(this.cagr);
     }
   },
   methods: {

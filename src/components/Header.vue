@@ -72,17 +72,20 @@
         /></RouterLink>
         <nav class="mil-top-menu">
           <ul>
-            <li  @click="toggleDropDown">
+            <li @click="toggleDropDown">
               <RouterLink to="/"
                 >MEMBERSHIP
-                <span class="arrow_down"
-                  ><font-awesome-icon :icon="['fas', 'angle-down']" /></span
-                >​</RouterLink
+                ​</RouterLink
               >
               <div class="drop_down" v-if="dropDown">
-               <h3>GURUKUL</h3>
-                <h3>One Stop Solution</h3>
-                <h3>Events & Workshops</h3>
+                <h3 @click="scrollToSection('gurukul')">GURUKUL</h3>
+                <h3 @click="scrollToSectionTop('oneStopSolution')">
+                  One Stop Solution
+                </h3>
+                <h3 @click="scrollToSection('eventsWorkshops')">
+                  Events & Workshops
+                </h3>
+                <h3 @click="$router.push('/calculator')">Calculator</h3>
               </div>
             </li>
             <li class="">
@@ -103,8 +106,9 @@
             class="mil-btn mil-sm"
             style="margin-left: 10px"
             @click="open"
-            >JOIN COMMUNITY</button>
-          
+          >
+            JOIN COMMUNITY
+          </button>
         </div>
         <div class="mil-menu-buttons"></div>
       </div>
@@ -113,37 +117,57 @@
 </template>
 
 <script>
-  export default {
-    name: "Header",
+export default {
+  name: "Header",
 
-    data() {
-      return {
-        dropDown: false,
-        togglePopup: false,
-        formData: {
+  data() {
+    return {
+      dropDown: false,
+      togglePopup: false,
+      formData: {
         name: "",
         phone: "",
         email: "",
         consultation: false,
         subscription: false,
         others: false,
-        additionalInfo: ""
+        additionalInfo: "",
       },
-      };
-    },
+    };
+  },
 
-    methods: {
-      toggleDropDown() {
-        this.dropDown = !this.dropDown;
-      },
-      close() {
+  methods: {
+    toggleDropDown() {
+      this.dropDown = !this.dropDown;
+    },
+    close() {
       this.togglePopup = false;
     },
     open() {
       this.togglePopup = true;
     },
+    scrollToSection(sectionId) {
+      // Scroll to the section
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     },
-  };
+    scrollToSectionTop(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        // Get the section's position relative to the top of the page
+        const sectionTop = section.offsetTop;
+
+        // Scroll to the section with a 100px offset
+        window.scrollTo({
+          top: sectionTop - 150, // Adjusting the scroll position to include 100px margin
+          behavior: "smooth", // Smooth scroll
+        });
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -233,7 +257,7 @@
   z-index: 1000;
   position: absolute;
   color: white;
-  background-color: #1D5F5D;
+  background-color: #1d5f5d;
   top: 90%;
   left: 0;
   padding: 0.5rem;
@@ -241,9 +265,14 @@
 }
 h3 {
   color: white;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 500;
   white-space: nowrap;
   margin: 5px 0;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3:hover {
+  opacity: 0.6;
 }
 </style>

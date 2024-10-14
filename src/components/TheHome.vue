@@ -32,10 +32,10 @@
             </div>
           </div>
         </div>
-        <div class="icon-boxes mil-p-160-130">
+        <div id="gurukul" class="icon-boxes mil-p-160-130">
           <div class="container">
             <div class="mil-text-center">
-              <h2 class="mil-light mil-mb-30 mil-up zoomOut" id="gurukul">GURUKUL</h2>
+              <h2 class="mil-light mil-mb-30 mil-up zoomOut">GURUKUL</h2>
               <p class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
                 Experience the bootcamp training by accessing the <br />finance
                 and other modules by top creators​
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="mil-features mil-p-0-80">
+        <div id="oneStopSolution" class="mil-features mil-p-0-80">
           <div class="container">
             <div
               class="row flex-sm-row-reverse justify-content-between align-items-center"
@@ -168,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="mil-cta mil-up">
+        <div id="eventsWorkshops" class="mil-cta mil-up">
           <div class="container">
             <div class="mil-out-frame mil-image mil-p-160-160">
               <div
@@ -430,7 +430,7 @@
                 <section class="section4">
       <div v-for="faq in pcFaq" :key="faq.id">
         <div @click="toggleFaq(faq)" class="mil-text-l mil-dark-soft mil-mb-60 mil-up zoomOut">
-          <h3>{{ faq.question }}</h3>
+          <h3 class="faq_head">{{ faq.question }}</h3>
           <p v-if="faq.open">{{ faq.answer }}</p>
         </div>
       </div>
@@ -536,6 +536,10 @@ methods: {
 @import '../assets/style1.css';
 @import '../assets/style2.css';
 @import '../assets/style3.css';
+
+.faq_head{
+  color: white;
+}
 
 .image{
   display: flex;
