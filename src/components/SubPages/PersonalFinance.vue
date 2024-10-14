@@ -261,7 +261,7 @@ export default {
       });
     },
     slideRight() {
-      const zoomOutElements = this.$refs.bgSection.querySelectorAll(".sec1_content");
+      const zoomOutElements = this.$refs.bgSection.querySelectorAll(".sec1_content, .sec2");
       zoomOutElements.forEach((zoomIn) => {
         gsap.from(zoomIn, {
           opacity: 0,
@@ -277,6 +277,40 @@ export default {
         });
       });
     },
+    slideRightTwo() {
+      const zoomOutElements = this.$refs.sectionB.querySelectorAll(".sec2");
+      zoomOutElements.forEach((zoomIn) => {
+        gsap.from(zoomIn, {
+          opacity: 0,
+          x: -100,
+          duration: 1,
+          scrollTrigger: {
+            trigger: zoomIn,
+            start: "top 65%",
+            end: "top 65%",
+            scrub: 2,
+            markers: false,
+          },
+        });
+      });
+    },
+    animaFunction(){
+    const zoomOutElements = this.$refs.sectionC.querySelectorAll('.sectiona_c h2, .sec3_1_con');
+  zoomOutElements.forEach(zoomOut => {
+      gsap.from(zoomOut, {
+        scale: 0,
+        duration: 1,
+        y: 50,
+        scrollTrigger: {
+          trigger: zoomOut,
+          start: 'top 95%',
+          end: 'top 81%',
+          scrub: 1,
+          markers: false
+        }
+      });
+    });
+  }
   },
 
   mounted() {
@@ -284,6 +318,8 @@ export default {
     this.$nextTick(() => {
       this.fadeOut();
       this.slideRight();
+      this.slideRightTwo();
+      this.animaFunction();
     });
   },
 };

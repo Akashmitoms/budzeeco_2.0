@@ -7,7 +7,7 @@
     <div class="cla1">
       <div class="cla1_a">
         <div class="Effective_returns">
-          <div><p>Invested Amount:</p><h6 class="value">{{ investedAmount }}</h6></div>
+          <div><p>Invested Amount:</p><h6 class="value">{{ investedAmount.toFixed(2) }}</h6></div>
           <div class="v_line"></div>
           <div><p>Amount In Future:</p><h6 class="value">{{ futureValue }}</h6></div>
           <div class="v_line"></div>
@@ -72,11 +72,6 @@
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
         </div>
 
-        <div class="popular_calculators" @click="$router.push('/cagr-calculation')">
-          <span>IRR Calculator</span>
-          <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
-        </div>
-
         <div class="popular_calculators" @click="$router.push('/nsc-calculation')">
           <span>NSC Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
@@ -107,6 +102,7 @@
 
 <script>
 import ChartDisplay from '../common/ChartDisplay.vue';
+import {formatNumber } from '../CommonFunction/functions.js';
 
 export default {
   name: "FireCalculation",
@@ -185,6 +181,9 @@ export default {
       };
     },
   },
+  formatedNumber() {
+      return formatNumber(this.investedAmount);
+    }
 };
 </script>
 

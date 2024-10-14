@@ -9,7 +9,7 @@
         <div class="Effective_returns">
           <div><p>Invested Amount:</p><h6 class="value">{{ totalInvestment }}</h6></div>
           <div class="v_line"></div>
-          <div><p>Estimated Returns</p><h6 class="value">{{ totalInterest }}</h6></div>
+          <div><p>Estimated Returns</p><h6 class="value">{{ formatedNumber }}</h6></div>
           <div class="v_line"></div>
           <div><p>Maturity Value:</p><h6 class="value">{{ maturityValue }}</h6></div>
         </div>
@@ -146,6 +146,7 @@
 
 <script>
 import ChartDisplay from '../common/ChartDisplay.vue';
+import {formatNumber } from '../CommonFunction/functions.js';
 
 export default {
   name: "RdCalculation",
@@ -213,6 +214,9 @@ export default {
           }
         }
       };
+    },
+    formatedNumber() {
+      return formatNumber(this.totalInterest);
     }
   },
   methods: {

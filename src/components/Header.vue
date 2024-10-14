@@ -72,7 +72,7 @@
         /></RouterLink>
         <nav class="mil-top-menu">
           <ul>
-            <li @click="toggleDropDown">
+            <li @click="toggleDropDown" class="mil-has-children">
               <RouterLink to="/"
                 >MEMBERSHIP
                 ​</RouterLink
@@ -82,20 +82,20 @@
                 <h3 @click="scrollToSectionTop('oneStopSolution')">
                   One Stop Solution
                 </h3>
-                <h3 @click="scrollToSection('eventsWorkshops')">
+                <h3 @click="scrollToSection('eventsWorkshops')">  
                   Events & Workshops
                 </h3>
                 <h3 @click="$router.push('/calculator')">Calculator</h3>
               </div>
             </li>
-            <li class="">
+            <li @click="dropDown=false">
               <RouterLink to="/masterClass">MASTERCLASS ​</RouterLink>
             </li>
-            <li class="">
+            <li @click="dropDown=false">
               <RouterLink to="/calculator">CALCULATORS​</RouterLink>
             </li>
-            <li class=""><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
-            <li class=""><RouterLink to="/brand">BRAND</RouterLink></li>
+            <li @click="dropDown=false"><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
+            <li @click="dropDown=false"><RouterLink to="/brand">BRAND</RouterLink></li>
           </ul>
         </nav>
         <div class="mil-menu-buttons">

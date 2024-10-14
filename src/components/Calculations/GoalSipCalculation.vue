@@ -72,10 +72,6 @@
           <span>FIRE Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
         </div>
-        <div class="popular_calculators" @click="$router.push('/irr-calculation')">
-          <span>IRR Calculator</span>
-          <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>
-        </div>
         <div class="popular_calculators" @click="$router.push('/nsc-calculation')">
           <span>NSC Calculator</span>
           <span><font-awesome-icon :icon="['fas', 'chevron-right']" /></span>

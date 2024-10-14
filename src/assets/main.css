@@ -33,3 +33,71 @@
   justify-content: center;
   align-items: center;
 }
+.pop_up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 500px; /* Limits the popup width */
+  padding: 20px;
+  padding-top: 60px; /* Adjusted to create space for the close button */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  z-index: 1001; /* Ensure it’s above other elements */
+  overflow-y: auto; /* Ensure the content is scrollable if it exceeds the height */
+  max-height: 80vh; /* Prevents the popup from becoming too tall */
+}
+.pop_up h2 {
+  color: #052e26;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.close {
+  position: absolute;
+  top: 10px; /* Position it at the top of the popup */
+  right: 20px; /* Adjust this value to position it correctly within the popup */
+  cursor: pointer;
+  font-size: 20px;
+  color: #052e26;
+  z-index: 1002; /* Ensure it’s above the popup content */
+}
+.input_pop input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.input_pop input::placeholder {
+  color: #052e26;
+  opacity: 1;
+}
+
+.input_pop input:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+.input_pop1 input {
+  display: inline;
+  margin: 10px 5px 10px 10px;
+}
+.textarea_pop textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.textarea_pop ::placeholder {
+  color: black;
+  opacity: 1;
+}
