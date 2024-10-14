@@ -71,19 +71,17 @@ http://www.w3.org/2000/svg"
 
       <div class="row align-items-center">
         <div class="col-xl-4 mil-mb-30">
-          <div
-            class="mil-icon-box mil-with-bg mil-dark mil-center mil-up"
-            @click="$router.push('/cagr-calculation')"
-          >
-          <span data-v-c735fc0c="" class="icon1 zoomOut" style="translate: none; rotate: none; scale: none; transform: translate(0px, 50px) scale(0);"><svg data-v-c735fc0c="" class="svg-inline--fa fa-chart-line" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="white" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"></path></svg></span>
-            <h5 class="mil-mb-20 mil-light mil-up zoomOut">
-              Compound annual growth rate
-            </h5>
-
-            <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
-              Figure out the compound annual growth rate in a flash.
-            </ul>
-          </div>
+          <div class="mil-icon-box mil-with-bg mil-dark mil-center mil-up" @click="$router.push('/cagr-calculation')">
+            <span data-v-c735fc0c="" class="icon1 zoomOut" style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 29.3947px, 0px) scale(0.4121);"><svg data-v-c735fc0c="" class="svg-inline--fa fa-chart-line" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="white" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"></path></svg></span>
+                  <h5 class="mil-mb-20 mil-light mil-up zoomOut">
+                    Compound annual growth rate
+                  </h5>
+                  
+                    <ul class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
+                      Figure out the compound annual growth rate in a flash.
+                    </ul>
+                
+                </div>
         </div>
         <div class="col-xl-4 mil-mb-30">
           <div
