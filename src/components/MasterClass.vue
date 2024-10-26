@@ -18,7 +18,7 @@
             <h2>Personal <br> Finanace <br> Mastery</h2>
           </div>
           <div class="sec2b">
-            <img src="\img\budzee\anoop_kv -1-fotor-bg-remover.png" alt="">
+            <img src="\img\budzee\anoop kv img-fotor-bg-remover.png" alt="">
           </div>
         </div>
         <div class="sec2_con bg_dark"> 

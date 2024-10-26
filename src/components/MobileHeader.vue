@@ -6,6 +6,9 @@
     </div>
     <div class="head2" v-if="showMenu">
       <ul>
+        <li >
+            <RouterLink to="/" class="link" @click="toggleMenu">MEMBERSHIP</RouterLink>
+          </li>
           <li >
             <RouterLink to="/masterclass" class="link" @click="toggleMenu">MASTERCLASS​</RouterLink>
           </li>
@@ -13,6 +16,7 @@
             <RouterLink to="/calculator" class="link" @click="toggleMenu">CALCULATORS​</RouterLink>
           </li>
           <li ><RouterLink to="/myMentor" class="link" @click="toggleMenu">MY MENTOR</RouterLink></li>
+          <li ><RouterLink to="/debtManagement" class="link" @click="toggleMenu">DEBT MANAGEMENT</RouterLink></li>
           <li ><RouterLink to="/brand" class="link" @click="toggleMenu">BRAND</RouterLink></li>
         </ul>
         <div class="btn_box">
@@ -90,7 +94,7 @@ box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
 
 .link {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
   font-weight: 400;
   font-family: dm-sans;

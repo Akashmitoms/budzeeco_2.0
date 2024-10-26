@@ -86,6 +86,7 @@
                   Events & Workshops
                 </h3>
                 <h3 @click="$router.push('/calculator')">Calculator</h3>
+                <h3 @click="$router.push('/debtManagement')">Debt Management</h3>
               </div>
             </li>
             <li @click="dropDown=false">
@@ -266,13 +267,14 @@ export default {
 h3 {
   color: white;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
-  margin: 5px 0;
+  margin: 7px 0;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
+  opacity: 0.8;
 }
 h3:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 </style>

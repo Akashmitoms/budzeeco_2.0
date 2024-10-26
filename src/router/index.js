@@ -18,6 +18,8 @@ import SipCalculation from '../components/Calculations/SipCalculation.vue'
 import SsyCalculation from '../components/Calculations/SsyCalculation.vue'
 import TaxCalculation from '../components/Calculations/TaxCalculation.vue'
 import BookCall from '../components/SubPages/BookCall.vue'
+import DebtManagement from '../components/DebtManagement.vue'
+import InquiryForm from '../components/SubPages/InquiryForm.vue'
 
 import PaymentPage from '../components/SubPages/PaymentPage.vue'
 
@@ -44,6 +46,16 @@ const router = createRouter({
       path: '/brand',
       name: 'Brand',
       component: Brand,
+    },
+    {
+      path: '/debtManagement',
+      name: 'DebtManagement',
+      component: DebtManagement,
+    },
+    {
+      path: '/inquiryForm',
+      name: 'InquiryForm',
+      component: InquiryForm,
     },
     {
       path: '/calculator',

@@ -19,15 +19,16 @@
       <div class="fooetr_sec">
         <h2>Contact Us</h2>
         <ul>
-            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'phone-volume']" /></span> 9846xxxxxx</li>
-            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'envelope']" /></span> contact@budzeeco.com</li>
-            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'map-location-dot']" /></span> Hyderabad</li>
+            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'phone-volume']" /></span> +91-8977020524</li>
+            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'envelope']" /></span> connect@budzeeco.com</li>
+            <li><span class="con_detail"><font-awesome-icon :icon="['fas', 'map-location-dot']" /></span> Hyderabad & Bangalore</li>
         </ul>
         <h5>Follow Us On:</h5>
         <span class="social_media">
             <span ><font-awesome-icon :icon="['fab', 'facebook']" /></span>
-            <span ><font-awesome-icon :icon="['fab', 'twitter']" /></span>
+            <span ><font-awesome-icon :icon="['fab', 'linkedin']" /></span>
             <span ><font-awesome-icon :icon="['fab', 'instagram']" /></span>
+            <span ><font-awesome-icon :icon="['fab', 'youtube']" /></span>
         </span>
         
       </div>
@@ -62,6 +63,7 @@
     .fooetr_sec p{
         font-family: helvetica;
         margin-top: 1%;
+        text-align: justify;
     }
     .fooetr_sec ul{
         margin-top: 2rem;
@@ -93,9 +95,10 @@
     }
     .social_media{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 10%;
         margin-bottom: 5%;
+        margin-left: 2rem;
     }
     .social_media span{
         font-size: 1.5rem;

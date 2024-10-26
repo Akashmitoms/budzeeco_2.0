@@ -139,11 +139,11 @@
                   />
                   <h5 class="mil-mb-20 mil-light mil-up zoomOut">
                     Gamified Modules
-                  </h5>
+                  </h5> <br>
                   <p class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
                     A Gamified Learning Experience, to help you learn better.
-                  </p>
-                  <p></p>
+                  </p> <br><br>
+                  
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
@@ -746,14 +746,19 @@ export default {
   background: linear-gradient(90deg, #192626, #1b1d1d);
 }
 /* mil-icon-box mil-with-bg mil-dark mil-center mil-up */
-/* .mil-icon-box{
-  max-height: 55vh;
+/* .mil-center{
+  height: 65vh;
 } */
 .mil-icon-box h5 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .mil-icon-box img {
   width: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .mil-center{
+  height: auto;
+}
 }
 
 @media screen and (max-width: 450px) {
