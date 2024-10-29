@@ -258,4 +258,7 @@ export default {
   color: white !important;
   margin-bottom: 1rem;
 }
+.mil-dark{
+  cursor: pointer;
+}
 </style>

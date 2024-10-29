@@ -50,7 +50,7 @@ header {
   top: 0;
   list-style: none;
   background: linear-gradient(90deg, #1b1d1d, #0d5152 50%, #1b1d1d);
-  z-index: 2;
+  z-index: 10;
 }
 .head1 {
   display: flex;

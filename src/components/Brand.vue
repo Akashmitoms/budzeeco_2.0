@@ -1,7 +1,7 @@
 <template>
    <section class="section7">
       <div class="sec1">
-      <img src="/img/budzee/brand 1-fotor-20241009232212.png" alt="">
+      <img src="\img\budzee\brand 1-fotor-29.png" alt="">
       <!-- <img src="../../public/img/budzee/20423-fotor.png" alt=""> -->
       </div>
    </section>

@@ -1,7 +1,7 @@
 <template>
   <section class="common_padding">
     <div class="dm1">
-      <img src="\img\budzee\piggybank-1.jpg" alt="" />
+      <img src="\img\budzee\debt managment.jpeg" alt="" />
     </div>
   </section>
   <section class="bg_dark dm2">
@@ -110,7 +110,7 @@
 }
 .dm1 img {
   width: 100%;
-  height: 90vh;
+  height: auto;
   object-fit: cover;
 }
 .dm2 {

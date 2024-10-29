@@ -142,12 +142,12 @@ export default {
   background: linear-gradient(90deg, #1b1d1d, #0d5152 50%, #1b1d1d);
 }
 .sec2a {
-  width: 40%;
+  width: 50%;
   text-align: left;
   padding: 1rem;
 }
 .sec2b {
-  width: 60%;
+  width: 50%;
   text-align: left;
   padding: 1rem;
   
@@ -189,7 +189,7 @@ export default {
  text-align: center;
 }
 .sec2b img{
-  width: 75%;
+  width: 95%;
 }
 
 @media screen and (max-width: 710px) {
@@ -218,7 +218,11 @@ export default {
     width: 100%;
   }
   .sec2a h2 {
-    font-size: 12vw;
+    font-size: 10vw;
   }
+  .sec2b img{
+  width: 75%;
+  margin-left: 12%;
+}
 }
 </style>

@@ -252,8 +252,8 @@ export default {
           duration: 1,
           scrollTrigger: {
             trigger: zoomIn,
-            start: "top 70%",
-            end: "top 70%",
+            start: "top 75%",
+            end: "top 75%",
             scrub: 1,
             markers: false,
           },
@@ -269,8 +269,8 @@ export default {
           duration: 1,
           scrollTrigger: {
             trigger: zoomIn,
-            start: "top 65%",
-            end: "top 65%",
+            start: "top 70%",
+            end: "top 70%",
             scrub: 2,
             markers: false,
           },
@@ -286,8 +286,8 @@ export default {
           duration: 1,
           scrollTrigger: {
             trigger: zoomIn,
-            start: "top 65%",
-            end: "top 65%",
+            start: "top 70%",
+            end: "top 70%",
             scrub: 2,
             markers: false,
           },
