@@ -1,6 +1,6 @@
 <template>
   <pop-up v-if="togglePopup">
-    <div class="pop_up">
+    <div class="pop_up"  ref="popup">
       <div class="close" @click="close">
         <font-awesome-icon :icon="['fas', 'xmark']" />
       </div>
@@ -611,9 +611,13 @@ export default {
   methods: {
     close() {
       this.togglePopup = false;
+      document.removeEventListener("click", this.clickOutside);
     },
     open() {
       this.togglePopup = true;
+      setTimeout(() => {
+        document.addEventListener("click", this.clickOutside);
+      }, 0);
     },
     toggleFaq(faq) {
       console.log("faq", faq);
@@ -647,6 +651,12 @@ export default {
         alert("An error occurred. Please try again.");
       }
     },
+    clickOutside(event) {
+      const popup = this.$refs.popup;
+      if (popup && !popup.contains(event.target)) {
+        this.close();
+      }
+    },
     animaFunction() {
       const zoomOutElements = this.$refs.artical.querySelectorAll(".zoomOut");
       zoomOutElements.forEach((zoomOut) => {
@@ -669,7 +679,9 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
     this.animaFunction();
+   
   },
+  
 };
 </script>
 

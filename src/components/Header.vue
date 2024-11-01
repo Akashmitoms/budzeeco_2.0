@@ -1,6 +1,6 @@
 <template>
   <pop-up v-if="togglePopup">
-    <div class="pop_up">
+    <div class="pop_up" ref="popup">
       <div class="close" @click="close">
         <font-awesome-icon :icon="['fas', 'xmark']" />
       </div>
@@ -144,9 +144,19 @@ export default {
     },
     close() {
       this.togglePopup = false;
+      document.removeEventListener("click", this.clickOutside);
     },
     open() {
       this.togglePopup = true;
+      setTimeout(() => {
+        document.addEventListener("click", this.clickOutside);
+      }, 0);
+    },
+    clickOutside(event) {
+      const popup = this.$refs.popup;
+      if (popup && !popup.contains(event.target)) {
+        this.close();
+      }
     },
     scrollToSection(sectionId) {
       // Scroll to the section

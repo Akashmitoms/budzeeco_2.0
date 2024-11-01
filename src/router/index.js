@@ -132,7 +132,14 @@ const router = createRouter({
       name: 'BookCall',
       component: BookCall,
     },
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition; // Scroll to the saved position
+    } else {
+      return { top: 0 }; // Scroll to top for new navigation
+    }
+  }
 })
 
 export default router
