@@ -1,0 +1,3 @@
+[submodule "mail/PHPMailer"]
+	path = mail/PHPMailer
+	url = https://github.com/Akashmitoms/budzeeco-new.git

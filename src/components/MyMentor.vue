@@ -186,7 +186,9 @@
           return;
         }
         const carousel = this.$refs.carousel;
+        if(carousel){
         carousel.style.transform = `translateX(-${this.currentIndex * 100 / this.slidesToShow}%)`;
+        }
       }, 3000);
     },
     updateSlidesToShow() {

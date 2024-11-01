@@ -551,6 +551,7 @@
 
 <script>
 import { gsap } from "gsap";
+import axios from 'axios';
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default {
@@ -623,6 +624,28 @@ export default {
           f.open = false;
         }
       });
+    },
+    resetForm() {
+      this.formData = {
+        name: "",
+        phone: "",
+        email: "",
+        consultation: false,
+        subscription: false,
+        others: false,
+        additionalInfo: "",
+      };
+    },
+    async submitForm() {
+      try {
+        const response = await axios.post("mail/send_email_consulatation.php", this.formData);
+        alert(response.data.message);
+        this.resetForm(); // Reset the form after submission
+        this.close(); // Close the popup after submission
+      } catch (error) {
+        console.error(error);
+        alert("An error occurred. Please try again.");
+      }
     },
     animaFunction() {
       const zoomOutElements = this.$refs.artical.querySelectorAll(".zoomOut");

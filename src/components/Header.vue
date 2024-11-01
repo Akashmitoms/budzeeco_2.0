@@ -118,6 +118,7 @@
 </template>
 
 <script>
+import axios from 'axios';  
 export default {
   name: "Header",
 
@@ -136,7 +137,7 @@ export default {
       },
     };
   },
-
+  
   methods: {
     toggleDropDown() {
       this.dropDown = !this.dropDown;
@@ -153,6 +154,28 @@ export default {
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
+    },
+    async submitForm() {
+      try {
+        const response = await axios.post("mail/send_email_consulatation.php", this.formData);
+        alert(response.data.message);
+        this.resetForm(); // Reset the form after submission
+        this.close(); // Close the popup after submission
+      } catch (error) {
+        console.error(error);
+        alert("An error occurred. Please try again.");
+      }
+    },
+    resetForm() {
+      this.formData = {
+        name: "",
+        phone: "",
+        email: "",
+        consultation: false,
+        subscription: false,
+        others: false,
+        additionalInfo: "",
+      };
     },
     scrollToSectionTop(sectionId) {
       const section = document.getElementById(sectionId);
