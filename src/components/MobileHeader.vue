@@ -4,7 +4,7 @@
       <div @click="$router.push('/')"><img src="/img/PNG Logo -1.png" /></div>
       <span @click="toggleMenu"><font-awesome-icon :icon="['fas', 'bars']" /></span>
     </div>
-    <div class="head2" v-if="showMenu">
+    <div class="head2" v-if="showMenu" ref="menu">
       <ul>
         <li >
             <RouterLink to="/" class="link" @click="toggleMenu">MEMBERSHIP</RouterLink>
@@ -36,11 +36,27 @@ export default {
       showMenu: false,
     };
   },
-    methods: {
-        toggleMenu() {
-        this.showMenu = !this.showMenu;
-        },
+  methods: {
+    toggleMenu(event) {
+      event.stopPropagation(); // Prevent click event from propagating to document
+      this.showMenu = !this.showMenu;
+      if (this.showMenu) {
+        document.addEventListener("click", this.closeMenu);
+      } else {
+        document.removeEventListener("click", this.closeMenu);
+      }
     },
+    closeMenu(event) {
+      const menu = this.$refs.menu;
+      if (menu && !menu.contains(event.target)) {
+        this.showMenu = false;
+        document.removeEventListener("click", this.closeMenu);
+      }
+    },
+  },
+  beforeDestroy() {
+    document.removeEventListener("click", this.closeMenu);
+  },
 };
 </script>
 
