@@ -85,7 +85,7 @@
       <p>
         Users in certain jurisdictions have rights to access, amend, or delete
         personal data. You can contact us at
-        <a href="mailto:support@budzeeco.io">support@budzeeco.io</a> for
+        <a href="mailto:connect@budzeeco.dom">connect@budzeeco.dom</a> for
         data-related requests.
       </p>
 
@@ -149,7 +149,7 @@
         <p>
           Users in certain jurisdictions have rights to access, amend, or delete
           personal data. You can contact us at
-          <a href="mailto:support@budzeeco.io">support@budzeeco.io</a> for
+          <a href="mailto:connect@budzeeco.dom">connect@budzeeco.dom</a> for
           data-related requests.
         </p>
 

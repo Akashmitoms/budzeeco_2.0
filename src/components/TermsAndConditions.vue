@@ -11,7 +11,7 @@
       <h2>Introduction</h2>
       <p>
         <strong>Purpose:</strong> These Terms and Conditions govern your use of
-        One Club Ventures Pvt. Ltd. (Referred to as “Budzeeco” ahead) services,
+        Budzeeco Ventures Pvt. Ltd. (Referred to as “Budzeeco” ahead) services,
         including our website, mobile application, courses, events, and other
         offerings (collectively, "Services").
       </p>
