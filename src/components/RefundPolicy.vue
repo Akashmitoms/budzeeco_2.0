@@ -24,7 +24,7 @@
           transaction.
         </li>
         <li>
-          Minimum 50% of the Personal Finance course/modules by Sharan Hegde is
+          Minimum 50% of the Personal Finance course/modules by Budzeeco is
           required to be completed, and proof must be shared via email.
         </li>
       </ul>
@@ -35,7 +35,7 @@
         <li>After completion of 7 (SEVEN) days from purchase transaction.</li>
         <li>
           Failure to complete at least 50% of the Personal Finance
-          course/modules by Sharan Hegde.
+          course/modules by Budzeeco.
         </li>
         <li>
           Financial problem or time constraint cannot be a reason to ask for a
