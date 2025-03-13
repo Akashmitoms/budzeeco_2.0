@@ -12,7 +12,7 @@
         <strong>7 (SEVEN) days</strong> of purchase.
       </p>
       <p>
-        Your refund will be processed within 7 business days after you raise the
+        Your refund will be credited within 7 business days after you raise the
         request by sending an email to
         <a href="mailto:connect@budzeeco.com">connect@budzeeco.com</a>
       </p>

@@ -4,10 +4,10 @@
       <img src="/img/PNG Logo -1.png" alt="" />
       <p>
         Budzeeco is designed to be your ultimate partner in managing personal
-        finances and investment. We offer an all- encompassing range of sevices
-        that carter to every aspect of your financial journey, ensuring that you
-        have the tools and support needed to make informed decisions and achieve
-        your financial goals.
+        finances and investment through educational courses. We offer an all
+        encompassing range of education content that cater to every aspect of
+        your financial journey, ensuring that you have the tools and support
+        needed to make informed decisions and achieve your financial goals.
       </p>
     </div>
     <div class="fooetr_sec">

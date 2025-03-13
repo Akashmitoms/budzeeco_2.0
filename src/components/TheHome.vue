@@ -139,11 +139,12 @@
                   />
                   <h5 class="mil-mb-20 mil-light mil-up zoomOut">
                     Gamified Modules
-                  </h5> <br>
+                  </h5>
+                  <br />
                   <p class="mil-text-s mil-dark-soft mil-mb-30 mil-up zoomOut">
                     A Gamified Learning Experience, to help you learn better.
-                  </p> <br><br>
-                  
+                  </p>
+                  <br /><br />
                 </div>
               </div>
               <div class="col-xl-4 mil-mb-30">
@@ -573,13 +574,13 @@ export default {
             "Financial planning is important because it keeps your money goals in check. By keeping an eye on what you earn, spend, save, and invest, you ensure stability and security for you and your crew. Creating a roadmap for your finances, helping you navigate through life's ups and downs while working towards a prosperous future. Without a solid plan, you might end up struggling to make ends meet or may miss out on big milestones like buying a home, starting a business, or chilling out in retirement. So, by taking the time to plan your finances wisely, you can build a solid foundation for your financial well-being and achieve the things you want in life.",
           open: false,
         },
-        {
-          id: 3,
-          question: "How much do I have to pay for RIA service?",
-          answer:
-            "According to SEBI rules, Registered Investment Advisors (RIAs) can't earn commissions or brokerage fees from investment products. Instead, they charge advisory fees for their services. These fees usually vary based on your income or family situation. This setup ensures you get personalized financial advice without any hidden agendas or conflicts of interest.",
-          open: false,
-        },
+        // {
+        //   id: 3,
+        //   question: "How much do I have to pay for RIA service?",
+        //   answer:
+        //     "According to SEBI rules, Registered Investment Advisors (RIAs) can't earn commissions or brokerage fees from investment products. Instead, they charge advisory fees for their services. These fees usually vary based on your income or family situation. This setup ensures you get personalized financial advice without any hidden agendas or conflicts of interest.",
+        //   open: false,
+        // },
         {
           id: 4,
           question: "Is the family included in the financial plan?",
@@ -756,9 +757,9 @@ export default {
   width: 30%;
 }
 @media screen and (max-width: 1200px) {
-  .mil-center{
-  height: auto;
-}
+  .mil-center {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 450px) {
