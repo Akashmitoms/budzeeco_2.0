@@ -4,7 +4,9 @@
       <h3>Budzeeco's Exclusive</h3>
       <h1>Masterclass</h1>
       <p>Your first step to <b>Financial Independence!</b></p>
-      <button @click="$router.push('/paymentPage')">Book Your Seat Now</button>
+      <button @click="$router.push('/paymentPage')">
+        Book Your Seat Now @199
+      </button>
     </div>
   </div>
   <section class="sectiona1">
@@ -15,13 +17,17 @@
       <div class="sec2_contain">
         <div class="ds_flex">
           <div class="sec2a light">
-            <h2>Personal <br> Finanace <br> Mastery</h2>
+            <h2>
+              Personal <br />
+              Finanace <br />
+              Mastery
+            </h2>
           </div>
           <div class="sec2b">
-            <img src="\img\budzee\anoop kv img-fotor-bg-remover.png" alt="">
+            <!-- <img src="\img\budzee\anoop kv img-fotor-bg-remover.png" alt=""> -->
           </div>
         </div>
-        <div class="sec2_con bg_dark"> 
+        <div class="sec2_con bg_dark">
           <h6>Mentor</h6>
           <h3>Anoop KV</h3>
           <div>
@@ -36,15 +42,14 @@
 </template>
 
 <script>
-import PersonalFinance from '../components/SubPages/PersonalFinance.vue';
+import PersonalFinance from "../components/SubPages/PersonalFinance.vue";
 
 export default {
   name: "MasterClass",
 
   components: {
     PersonalFinance,
-  }
-
+  },
 };
 </script>
 
@@ -150,9 +155,8 @@ export default {
   width: 50%;
   text-align: left;
   padding: 1rem;
-  
 }
-.sec2_con{
+.sec2_con {
   text-align: left;
   border-radius: 0 0 20px 20px;
   padding: 5%;
@@ -170,7 +174,7 @@ export default {
   font-weight: 700;
   font-family: helvetica;
 }
-.btn{
+.btn {
   background-color: white;
   font-size: 1rem;
   font-weight: 400;
@@ -186,9 +190,10 @@ export default {
   font-size: 6vw;
   font-weight: 700;
   font-family: helvetica;
- text-align: center;
+  text-align: center;
+  padding-left: 7%;
 }
-.sec2b img{
+.sec2b img {
   width: 95%;
 }
 
@@ -196,7 +201,7 @@ export default {
   .sec1 h3 {
     font-size: 1.8rem;
   }
-  .bg{
+  .bg {
     height: 45vh;
   }
   .sec1 h1 {
@@ -209,20 +214,21 @@ export default {
   .sec1 button {
     font-size: 1.2rem;
   }
-  .ds_flex{
+  .ds_flex {
     flex-direction: column-reverse;
     gap: 0;
     margin-top: 0;
   }
-  .sec2a, .sec2b{
+  .sec2a,
+  .sec2b {
     width: 100%;
   }
   .sec2a h2 {
     font-size: 10vw;
   }
-  .sec2b img{
-  width: 75%;
-  margin-left: 12%;
-}
+  .sec2b img {
+    width: 75%;
+    margin-left: 12%;
+  }
 }
 </style>
