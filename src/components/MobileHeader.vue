@@ -67,33 +67,62 @@
   <header>
     <div class="head1">
       <div @click="$router.push('/')"><img src="/img/PNG Logo -1.png" /></div>
-      <span @click="toggleMenu"><font-awesome-icon :icon="['fas', 'bars']" /></span>
+      <span @click="toggleMenu"
+        ><font-awesome-icon :icon="['fas', 'bars']"
+      /></span>
     </div>
     <div class="head2" v-if="showMenu" ref="menu">
       <ul>
-        <li >
-            <RouterLink to="/" class="link" @click="toggleMenu">MEMBERSHIP</RouterLink>
-          </li>
-          <li >
-            <RouterLink to="/masterclass" class="link" @click="toggleMenu">MASTERCLASS​</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/calculator" class="link" @click="toggleMenu">CALCULATORS​</RouterLink>
-          </li>
-          <li ><RouterLink to="/myMentor" class="link" @click="toggleMenu">MY MENTOR</RouterLink></li>
-          <li ><RouterLink to="/debtManagement" class="link" @click="toggleMenu">DEBT MANAGEMENT</RouterLink></li>
-          <li ><RouterLink to="/brand" class="link" @click="toggleMenu">BRAND</RouterLink></li>
-        </ul>
-        <div class="btn_box">
-        <button class="butn">Log In</button>
-        <button class="butn"  @click="open">JOIN COMMUNITY</button>
+        <li>
+          <RouterLink to="/" class="link" @click="toggleMenu"
+            >MEMBERSHIP</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/masterclass" class="link" @click="toggleMenu"
+            >MASTERCLASS​</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/calculator" class="link" @click="toggleMenu"
+            >CALCULATORS​</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/myMentor" class="link" @click="toggleMenu"
+            >MY MENTOR</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/debtManagement" class="link" @click="toggleMenu"
+            >DEBT MANAGEMENT</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink to="/brand" class="link" @click="toggleMenu"
+            >BRAND</RouterLink
+          >
+        </li>
+        <li>
+          <a
+            href="http://nationalfinancewizardquest.budzeeco.com"
+            target="_blank"
+            class="link"
+            @click="toggleMenu"
+            >MY EVENTS</a
+          >
+        </li>
+      </ul>
+      <div class="btn_box">
+        <!-- <button class="butn">Log In</button> -->
+        <button class="butn" @click="open">JOIN COMMUNITY</button>
       </div>
     </div>
   </header>
 </template>
 
 <script>
-import axios from 'axios';  
+import axios from "axios";
 export default {
   name: "Header",
 
@@ -124,7 +153,10 @@ export default {
     },
     async submitForm() {
       try {
-        const response = await axios.post("mail/send_email_consulatation.php", this.formData);
+        const response = await axios.post(
+          "mail/send_email_consulatation.php",
+          this.formData
+        );
         alert(response.data.message);
         this.resetForm(); // Reset the form after submission
         this.close(); // Close the popup after submission
@@ -202,19 +234,18 @@ header {
   padding: 10px 0;
 }
 .head2 {
-width: 70%;
-margin: auto;
-list-style: none;
-box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
+  width: 70%;
+  margin: auto;
+  list-style: none;
+  box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
+  padding: 2% 0;
 }
 .head2 ul li {
   list-style: none;
   position: relative;
   margin: 10px 0;
-  
 }
-.head2 ul li:hover
- {
+.head2 ul li:hover {
   background-color: #123931;
   cursor: pointer;
   .link {
@@ -229,9 +260,9 @@ box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
   font-weight: 400;
   font-family: dm-sans;
 }
-.arrow{
-position: absolute;
-right: 20px;
+.arrow {
+  position: absolute;
+  right: 20px;
 }
 .btn_box {
   display: flex;
@@ -240,7 +271,7 @@ right: 20px;
   gap: 10px;
 }
 .btn_box button {
-  background-color: #FF8060;
+  background-color: #ff8060;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;

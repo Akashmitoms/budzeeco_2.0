@@ -73,30 +73,40 @@
         <nav class="mil-top-menu">
           <ul>
             <li @click="toggleDropDown" class="mil-has-children">
-              <RouterLink to="/"
-                >MEMBERSHIP
-                ​</RouterLink
-              >
+              <RouterLink to="/">MEMBERSHIP ​</RouterLink>
               <div class="drop_down" v-if="dropDown">
                 <h3 @click="scrollToSection('gurukul')">GURUKUL</h3>
                 <h3 @click="scrollToSectionTop('oneStopSolution')">
                   One Stop Solution
                 </h3>
-                <h3 @click="scrollToSection('eventsWorkshops')">  
+                <h3 @click="scrollToSection('eventsWorkshops')">
                   Events & Workshops
                 </h3>
                 <h3 @click="$router.push('/calculator')">Calculator</h3>
-                <h3 @click="$router.push('/debtManagement')">Debt Management</h3>
+                <h3 @click="$router.push('/debtManagement')">
+                  Debt Management
+                </h3>
               </div>
             </li>
-            <li @click="dropDown=false">
+            <li @click="dropDown = false">
               <RouterLink to="/masterClass">MASTERCLASS ​</RouterLink>
             </li>
-            <li @click="dropDown=false">
+            <!-- <li @click="dropDown=false">
               <RouterLink to="/calculator">CALCULATORS​</RouterLink>
+            </li> -->
+            <li @click="dropDown = false">
+              <RouterLink to="/myMentor">MY MENTOR</RouterLink>
             </li>
-            <li @click="dropDown=false"><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
-            <li @click="dropDown=false"><RouterLink to="/brand">BRAND</RouterLink></li>
+            <li @click="dropDown = false">
+              <RouterLink to="/brand">BRAND</RouterLink>
+            </li>
+            <li @click="dropDown = false">
+              <a
+                href="http://nationalfinancewizardquest.budzeeco.com"
+                target="_blank"
+                >MY EVENTS</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="mil-menu-buttons">
@@ -118,7 +128,7 @@
 </template>
 
 <script>
-import axios from 'axios';  
+import axios from "axios";
 export default {
   name: "Header",
 
@@ -137,7 +147,7 @@ export default {
       },
     };
   },
-  
+
   methods: {
     toggleDropDown() {
       this.dropDown = !this.dropDown;
@@ -167,7 +177,10 @@ export default {
     },
     async submitForm() {
       try {
-        const response = await axios.post("mail/send_email_consulatation.php", this.formData);
+        const response = await axios.post(
+          "mail/send_email_consulatation.php",
+          this.formData
+        );
         alert(response.data.message);
         this.resetForm(); // Reset the form after submission
         this.close(); // Close the popup after submission

@@ -87,10 +87,23 @@
       </ul>
       <h5>Follow Us On:</h5>
       <span class="social_media">
-        <span><font-awesome-icon :icon="['fab', 'facebook']" /></span>
-        <span><font-awesome-icon :icon="['fab', 'linkedin']" /></span>
-        <span><font-awesome-icon :icon="['fab', 'instagram']" /></span>
-        <span><font-awesome-icon :icon="['fab', 'youtube']" /></span>
+        <span
+          ><a href="https://www.facebook.com/share/1ABpqMcqVS/" target="_blank"
+            ><font-awesome-icon :icon="['fab', 'facebook']" /></a
+        ></span>
+        <span
+          ><a href="https://www.linkedin.com/company/budzeeco/" target="_blank"
+            ><font-awesome-icon :icon="['fab', 'linkedin']" /></a
+        ></span>
+        <span
+          ><a
+            href="https://www.instagram.com/mybudzeeco?igsh=ZzJ4OTNrY3Q5cWdk"
+            target="_blank"
+            ><font-awesome-icon :icon="['fab', 'instagram']" /></a
+        ></span>
+        <!-- <span
+          ><a href=""><font-awesome-icon :icon="['fab', 'youtube']" /></a
+        ></span> -->
       </span>
     </div>
   </footer>
@@ -163,6 +176,9 @@ footer {
 .social_media span {
   font-size: 1.5rem;
   cursor: pointer;
+}
+.social_media span a {
+  color: #a0cdcd;
 }
 .social_media span:hover {
   color: #fff;
