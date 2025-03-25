@@ -73,30 +73,40 @@
         <nav class="mil-top-menu">
           <ul>
             <li @click="toggleDropDown" class="mil-has-children">
-              <RouterLink to="/"
-                >MEMBERSHIP
-                ​</RouterLink
-              >
+              <RouterLink to="/">MEMBERSHIP ​</RouterLink>
               <div class="drop_down" v-if="dropDown">
                 <h3 @click="scrollToSection('gurukul')">GURUKUL</h3>
                 <h3 @click="scrollToSectionTop('oneStopSolution')">
                   One Stop Solution
                 </h3>
-                <h3 @click="scrollToSection('eventsWorkshops')">  
+                <h3 @click="scrollToSection('eventsWorkshops')">
                   Events & Workshops
                 </h3>
                 <h3 @click="$router.push('/calculator')">Calculator</h3>
-                <h3 @click="$router.push('/debtManagement')">Debt Management</h3>
+                <h3 @click="$router.push('/debtManagement')">
+                  Debt Management
+                </h3>
               </div>
             </li>
-            <li @click="dropDown=false">
+            <li @click="dropDown = false">
               <RouterLink to="/masterClass">MASTERCLASS ​</RouterLink>
             </li>
-            <li @click="dropDown=false">
+            <!-- <li @click="dropDown = false">
               <RouterLink to="/calculator">CALCULATORS​</RouterLink>
+            </li> -->
+            <li @click="dropDown = false">
+              <RouterLink to="/myMentor">MY MENTOR</RouterLink>
             </li>
-            <li @click="dropDown=false"><RouterLink to="/myMentor">MY MENTOR</RouterLink></li>
-            <li @click="dropDown=false"><RouterLink to="/brand">BRAND</RouterLink></li>
+            <li @click="dropDown = false">
+              <RouterLink to="/brand">BRAND</RouterLink>
+            </li>
+            <li @click="dropDown = false">
+              <a
+                href="http://nationalfinancewizardquest.budzeeco.com"
+                target="_blank"
+                >MY EVENTS</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="mil-menu-buttons">
