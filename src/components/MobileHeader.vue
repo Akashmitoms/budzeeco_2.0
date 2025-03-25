@@ -67,9 +67,12 @@
   <header>
     <div class="head1">
       <div @click="$router.push('/')"><img src="/img/PNG Logo -1.png" /></div>
-      <span @click="toggleMenu"
-        ><font-awesome-icon :icon="['fas', 'bars']"
-      /></span>
+      <span @click="toggleMenu">
+        <font-awesome-icon
+          :icon="showMenu ? ['fas', 'xmark'] : ['fas', 'bars']"
+        />
+        <!-- <font-awesome-icon :icon="['fas', 'xmark']" /> -->
+      </span>
     </div>
     <div class="head2" v-if="showMenu" ref="menu">
       <ul>
