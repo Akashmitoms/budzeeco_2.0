@@ -115,6 +115,15 @@
             >MY EVENTS</a
           >
         </li>
+        <li>
+          <a
+            href="https://courses.budzeeco.com"
+            target="_blank"
+            class="link"
+            @click="toggleMenu"
+            >ACADEMY</a
+          >
+        </li>
       </ul>
       <div class="btn_box">
         <!-- <button class="butn">Log In</button> -->

@@ -107,11 +107,12 @@
                 >MY EVENTS</a
               >
             </li>
+            <li @click="dropDown = false">
+              <a href="https://courses.budzeeco.com" target="_blank">ACADEMY</a>
+            </li>
           </ul>
         </nav>
         <div class="mil-menu-buttons">
-          <a class="mil-btn mil-sm" href="register.html">Log in</a>
-
           <!-- <div class="mil-menu-btn"><span></span></div> -->
           <button
             class="mil-btn mil-sm"
